@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+}
+
+<ul>
+    @foreach (var page in root.Children.Where("Visible"))
+    {
+        <li>
+            <a href="@page.Url">@page.Name</a>
+        </li>
+    }
+</ul>

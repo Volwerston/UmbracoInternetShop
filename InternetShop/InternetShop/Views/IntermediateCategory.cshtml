@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.IntermediateCategory>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Layout39Cols.cshtml";
+}
+
+@{ var selection = Model.Content.Children.Where(x => x.IsVisible()); }
+
+@if (selection.Any())
+{
+    <ul>
+        @foreach (var item in selection)
+        {
+            <li>
+                <a href="@item.Url">@item.Name</a>
+            </li>
+        }
+    </ul>
+}

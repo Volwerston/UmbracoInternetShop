@@ -213,6 +213,10 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Our.Umbraco.NestedContent, Version=0.4.6286.19708, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.NestedContent.0.4.0\lib\net45\Our.Umbraco.NestedContent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
@@ -298,8 +302,60 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TableEditor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TableEditor.0.1.0\lib\net40\TableEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
       <HintPath>..\packages\UmbracoCms.Core.7.6.4\lib\net45\TidyNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.Controls, Version=6.1.5900.24993, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.Core, Version=6.1.5900.24990, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.DataTypes, Version=6.1.5900.24991, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.DataTypes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.DataTypes.RazorDataTypeModels, Version=6.1.5900.24992, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.DataTypes.RazorDataTypeModels.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.Installer, Version=6.1.5900.24993, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.Installer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.Legacy, Version=6.1.5900.24994, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.MacroEngines, Version=6.1.5900.24994, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.MacroEngines.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.Mapping, Version=6.1.5900.24994, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.Mapping.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.NotFoundHandlers, Version=6.1.5900.24993, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.NotFoundHandlers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.PropertyEditors.ValueConverters, Version=6.1.5900.24992, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.PropertyEditors.ValueConverters.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.UI, Version=6.1.5900.24993, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="uComponents.XsltExtensions, Version=6.1.5900.24992, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uComponents.6.1.1\lib\net40\uComponents.XsltExtensions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="umbraco, Version=1.0.6396.36631, Culture=neutral, processorArchitecture=MSIL">
@@ -340,6 +396,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\NestedContent\Css\nestedcontent.css" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.controllers.js" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.directives.js" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.filters.js" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.resources.js" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.doctypepicker.html" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.editor.html" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -405,17 +469,6 @@
     <Content Include="App_Data\NuGetBackup\20170723-120623\CopyLogs\UmbracoCopy.log" />
     <Content Include="App_Data\NuGetBackup\20170723-120623\Web.config" />
     <Content Include="App_Data\packages\installed\installedPackages.config" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\write.lock" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\write.lock" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments_1" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\write.lock" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.YURA.hash" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.YURA.list" />
     <Content Include="App_Data\umbraco.config" />
     <Content Include="bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="bin\ApplicationInsights.config" />
@@ -582,6 +635,18 @@
     <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
     <Content Include="Umbraco\Webservices\UltimatePickerAutoCompleteHandler.ashx" />
     <Content Include="Umbraco\Xslt\Web.config" />
+    <Content Include="App_Plugins\TableEditor\package.manifest" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\MacroPartials\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="App_Plugins\NestedContent\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -680,12 +745,13 @@
     <Content Include="App_Data\NuGetBackup\20170723-120623\Config\Lang\ru-RU.user.xml" />
     <Content Include="App_Data\NuGetBackup\20170723-120623\Config\Lang\sv-SE.user.xml" />
     <Content Include="App_Data\NuGetBackup\20170723-120623\Config\Lang\zh-CN.user.xml" />
-    <Content Include="App_Data\TEMP\ClientDependency\YURA-77efb3349ca21f605969857a885839d7-map.xml" />
-    <Content Include="App_Data\TEMP\DistCache\YURA\LMW3SVC2ROOT-lastsynced.txt" />
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.htm" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
+    <Content Include="App_Plugins\TableEditor\css\table.editor.css" />
+    <Content Include="App_Plugins\TableEditor\js\table.editor.js" />
+    <Content Include="App_Plugins\TableEditor\views\table.editor.html" />
     <Content Include="bin\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="bin\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
     <Content Include="bin\amd64\sqlceca40.dll" />
@@ -833,6 +899,7 @@
     <Content Include="bin\x86\sqlceme40.dll" />
     <Content Include="bin\x86\sqlceqp40.dll" />
     <Content Include="bin\x86\sqlcese40.dll" />
+    <Content Include="Common\Images\master_header.jpg" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -2039,6 +2106,7 @@
     <Content Include="Umbraco\Plugins\Tinymce3\insertLink.aspx" />
     <Content Include="Umbraco\Plugins\Tinymce3\insertMacro.aspx" />
     <Content Include="Umbraco\Plugins\Tinymce3\tinymce3tinymceCompress.aspx" />
+    <Content Include="Umbraco\Plugins\uComponents\uComponentsInstaller.ascx" />
     <Content Include="Umbraco\preview\editors\background.html" />
     <Content Include="Umbraco\preview\editors\border.html" />
     <Content Include="Umbraco\preview\editors\color.html" />
@@ -3431,7 +3499,6 @@
     <Folder Include="App_Data\NuGetBackup\20170723-120623\Umbraco\" />
     <Folder Include="App_Data\NuGetBackup\20170723-120623\Umbraco_Client\" />
     <Folder Include="App_Data\packages\created\" />
-    <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>

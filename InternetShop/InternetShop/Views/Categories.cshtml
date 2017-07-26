@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Categories>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Layout12Cols.cshtml";
+}
+
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+}
+
+<ul>
+    @foreach (var page in root.Children.Where("Visible"))
+    {
+        <li>
+            <a href="@page.Url">@page.Name</a>
+        </li>
+    }
+</ul>

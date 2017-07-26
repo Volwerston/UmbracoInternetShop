@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Layout363Cols>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-3">
+        @Html.Partial(Model.Content.GetPropertyValue<string>("leftPartialViewName"))
+    </div>
+    <div class="col-xs-6">
+        @RenderBody()
+    </div>
+    <div class="cl-xs-3">
+        @Html.Partial(Model.Content.GetPropertyValue<string>("rightPartialViewName"))
+    </div>
+</div>
