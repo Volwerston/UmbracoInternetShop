@@ -4,4 +4,12 @@
 	Layout = "Layout12Cols.cshtml";
 }
 
-<p>This is my start page!</p>
+@{
+var elements = Model.Content.Children().Where(x => x.IsVisible());
+foreach(var item in elements)
+{
+   var el = item.GetPropertyValue<IEnumerable<IPublishedContent>>("myCarousel");
+   Html.RenderPartial("HorizontalDottedCarousel", el);
+}
+
+}

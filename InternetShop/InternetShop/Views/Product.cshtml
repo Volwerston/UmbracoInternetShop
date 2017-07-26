@@ -4,7 +4,7 @@
 	Layout = "Layout39Cols.cshtml";
 }
 
-
+@*
 @{
 var items =
 Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel");
@@ -15,3 +15,10 @@ var image = item.GetPropertyValue<IPublishedContent>("image");
             <img src="@image.Url"/>
 }
 }
+*@
+
+@Html.Partial("HorizontalDottedCarousel", Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"))
+
+<h2>Properties</h2>
+
+@Html.Partial("ProductPropertyList", Model.Content.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesValues"))
