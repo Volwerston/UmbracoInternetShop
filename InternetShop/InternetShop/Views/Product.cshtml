@@ -1,5 +1,17 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Product>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Layout93Cols.cshtml";
+	Layout = "Layout39Cols.cshtml";
+}
+
+
+@{
+var items =
+Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel");
+
+foreach(var item in items) {
+<h3>@item.GetPropertyValue("title")</h3>
+var image = item.GetPropertyValue<IPublishedContent>("image");
+            <img src="@image.Url"/>
+}
 }

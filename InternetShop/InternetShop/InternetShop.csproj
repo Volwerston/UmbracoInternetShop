@@ -213,6 +213,10 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Our.Umbraco.DocTypeGridEditor, Version=0.4.6286.23695, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.DocTypeGridEditor.0.4.0\lib\net45\Our.Umbraco.DocTypeGridEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Our.Umbraco.NestedContent, Version=0.4.6286.19708, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Our.Umbraco.NestedContent.0.4.0\lib\net45\Our.Umbraco.NestedContent.dll</HintPath>
       <Private>True</Private>
@@ -396,6 +400,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\DocTypeGridEditor\Config\grid.editors.config.js" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Css\doctypegrideditor.css" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Js\doctypegrideditor.controllers.js" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Js\doctypegrideditor.resources.js" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Js\doctypegrideditor.services.js" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Views\doctypegrideditor.dialog.html" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Views\doctypegrideditor.html" />
     <Content Include="App_Plugins\NestedContent\Css\nestedcontent.css" />
     <Content Include="App_Plugins\NestedContent\Js\nestedcontent.controllers.js" />
     <Content Include="App_Plugins\NestedContent\Js\nestedcontent.directives.js" />
@@ -647,6 +658,9 @@
     <Content Include="Views\MacroPartials\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\MacroPartials\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="App_Plugins\NestedContent\package.manifest" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Render\DocTypeGridEditorPreviewer.cshtml" />
+    <Content Include="App_Plugins\DocTypeGridEditor\Render\DocTypeGridEditor.cshtml" />
+    <Content Include="App_Plugins\DocTypeGridEditor\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

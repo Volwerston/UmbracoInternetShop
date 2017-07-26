@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8f61548fdfe18530")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d2f3f6b2894d9225")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 
 // FILE: models.generated.cs
@@ -363,12 +363,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Carousel
+		///</summary>
+		[ImplementPropertyType("carousel")]
+		public IEnumerable<IPublishedContent> Carousel
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"); }
+		}
+
+		///<summary>
+		/// Description
+		///</summary>
+		[ImplementPropertyType("description")]
+		public string Description
+		{
+			get { return this.GetPropertyValue<string>("description"); }
+		}
+
+		///<summary>
 		/// Properties' Values: Defines values for properties defined in "Properties' List"
 		///</summary>
 		[ImplementPropertyType("propertiesValues")]
 		public TableEditor.Models.TableEditorModel PropertiesValues
 		{
 			get { return this.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesValues"); }
+		}
+
+		///<summary>
+		/// Right Partial View Name
+		///</summary>
+		[ImplementPropertyType("rightPartialViewName")]
+		public string RightPartialViewName
+		{
+			get { return this.GetPropertyValue<string>("rightPartialViewName"); }
 		}
 	}
 
@@ -398,30 +425,65 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// CategoryName: Name of the category that the carousel is associated with
+		/// MyCarousel
 		///</summary>
-		[ImplementPropertyType("categoryName")]
-		public string CategoryName
+		[ImplementPropertyType("myCarousel")]
+		public IEnumerable<IPublishedContent> MyCarousel
 		{
-			get { return this.GetPropertyValue<string>("categoryName"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("myCarousel"); }
+		}
+	}
+
+	/// <summary>Carousel Item</summary>
+	[PublishedContentModel("carouselItem")]
+	public partial class CarouselItem : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "carouselItem";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public CarouselItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CarouselItem, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// Data items: Set of image-text-url triples
+		/// Image
 		///</summary>
-		[ImplementPropertyType("dataItems")]
-		public Newtonsoft.Json.Linq.JToken DataItems
+		[ImplementPropertyType("image")]
+		public IPublishedContent Image
 		{
-			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("dataItems"); }
+			get { return this.GetPropertyValue<IPublishedContent>("image"); }
 		}
 
 		///<summary>
-		/// PartialViewName: Name of the template used for representing images
+		/// Link
 		///</summary>
-		[ImplementPropertyType("partialViewName")]
-		public string PartialViewName
+		[ImplementPropertyType("link")]
+		public IPublishedContent Link
 		{
-			get { return this.GetPropertyValue<string>("partialViewName"); }
+			get { return this.GetPropertyValue<IPublishedContent>("link"); }
+		}
+
+		///<summary>
+		/// Title
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return this.GetPropertyValue<string>("title"); }
 		}
 	}
 

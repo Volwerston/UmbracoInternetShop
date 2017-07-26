@@ -23,6 +23,22 @@
 	    "view": "embed",
 	    "icon": "icon-movie-alt"
 	},
+{
+    "name": "Carousel",
+    "alias": "carousel",
+    "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
+    "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
+    "icon": "icon-item-arrangement",
+    "config": {
+        "allowedDocTypes": ["^Carousel$"],
+        "nameTemplate": "",
+        "enablePreview": true,
+        "viewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/",
+        "previewViewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/Previews/",
+        "previewCssFilePath": "",
+        "previewJsFilePath": ""
+    }
+},
     {
         "name": "Headline",
         "alias": "headline",
