@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    var rowIndex = 0;
+    var tbl =  Model.Content.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesList");
+}
+<div class="table-editor-wrapper">
+    <div class="row">
+        @{       
+                foreach (var row in tbl.Cells)
+                {
+                    <div class="col-xs-11">
+                        @{
+                            var columnIndex = 0;
+                            <p><b>@Html.Raw(row.First().Value)</b></p>
+                            foreach (var column in row)
+                            {
+                                if(columnIndex != 0 && column.Value != ""){
+                                <input type="checkbox" /><span>@column.Value</span><br/>
+                                }
+                                columnIndex++;
+                            }
+                        
+                        <hr/>
+                            rowIndex++;
+                        }
+                    </div>
+                }
+        }
+    </div>
+</div>
