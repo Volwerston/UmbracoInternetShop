@@ -6,55 +6,31 @@
 <div class="table-editor-wrapper">
     <table class="@Model.TableStyle">
         @{       
-            if(Model.UseFirstRowAsHeader) {
-                <thead>
-                    @foreach (var column in Model.Cells.FirstOrDefault())
-                    {
-                        <th>@Html.Raw(column.Value)</th>
-                    }
-                </thead>   
-                rowIndex++;
-            }
-        
             <tbody>
-                @foreach (var row in Model.Cells)
-                {
-                    if(Model.UseFirstRowAsHeader && row == Model.Cells.FirstOrDefault()) {
-                        continue;
-                    }
-
-                    if (Model.UseLastRowAsFooter && row == Model.Cells.LastOrDefault() && Model.Cells.Count() > 1)
-                    {
-                        continue;
-                    }
-        
+                @foreach (var row in Model.Cells){
                     <tr class="@Model.RowStylesSelected.ElementAtOrDefault(rowIndex)">
                         @{
                             var columnIndex = 0;
+                            <td style="padding-right: 10px;"><b>@row.First().Value</b></td>
                         
-                            foreach (var column in row)
-                            {
-                                <td style="border: 1px solid black" class="@Model.ColumnStylesSelected.ElementAtOrDefault(columnIndex)">@Html.Raw(column.Value)</td>
+                        <td>
+                            @foreach (var column in row){
+                            if(columnIndex != 0){
+                            if(column.Value != "" && columnIndex > 1){
+                                 <span>/</span> @Html.Raw(column.Value)
+                                }
+                                else if(column.Value != ""){
+                                @Html.Raw(column.Value)
+                                }
+                            }
                                 columnIndex++;
                             }
-                        
+                        </td>
                             rowIndex++;
                         }
                     </tr>
                 }
             </tbody>
-
-            if (Model.UseLastRowAsFooter && Model.Cells.Count() > 1)
-            {
-                var columnIndex = 0;
-                <tfoot>
-                    @foreach (var column in Model.Cells.LastOrDefault())
-                    {
-                        <td class="@Model.ColumnStylesSelected.ElementAtOrDefault(columnIndex)">@Html.Raw(column.Value)</td>
-                        columnIndex++;
-                    }
-                </tfoot>  
-            }
         }
     </table>
 </div>
