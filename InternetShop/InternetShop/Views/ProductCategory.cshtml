@@ -1,19 +1,132 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ProductCategory>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
-@{
-	Layout = "Layout39Cols.cshtml";
-}
+    @using Newtonsoft.Json;
+    @using ContentModels = Umbraco.Web.PublishedContentModels;
+    @{
+    Layout = "Layout39Cols.cshtml";
+    }
 
-@{ var selection = Model.Content.Children.Where(x => x.IsVisible()); }
+    @{ var selection = Model.Content.Children.Where(x => x.IsVisible()); }
 
-@if (selection.Any())
-{
-    <ul>
-        @foreach (var item in selection)
+    <input type="text" class="form-control" placeholder="Product name" name="product_name" />
+    <br/>
+    <div id="product_container">
+        @if (selection.Any())
         {
+        <ul>
+            @foreach (var item in selection)
+            {
             <li>
                 <a href="@item.Url">@item.Name</a>
             </li>
+            }
+        </ul>
         }
-    </ul>
-}
+        else{
+        <p>No products were found.</p>
+        }
+    </div>
+
+    @section otherScripts{
+    <script type="text/javascript">
+
+        var selectedItems = {
+            CategoryId: '@CurrentPage.Id',
+            Name: "",
+            Properties: []
+        };
+
+        var demo = '@Html.Raw(JsonConvert.SerializeObject(Model.Content.Children.Where(x => x.IsVisible()).Select(x => new{Id = x.Id, Name = x.Name, Url = x.Url})))';
+        var products = JSON.parse(demo);
+
+        function searchForProducts() {
+            $("#product_container").empty();
+            $.ajax({
+                method: 'POST',
+                url: '/Umbraco/Api/Product/Search',
+                contentType: 'application/json; charset=utf-8',
+                dataType: "json",
+                data: JSON.stringify(selectedItems),
+                async: false,
+                success: function (res) {
+                    if (res.length == 0) {
+                        $("#product_container").append('<p>No products were found</p>');
+                    }
+                    else {
+                        $("#product_container").append("<ul>");
+
+                        for (var i = 0; i < res.length; ++i) {
+                            for (var j = 0; j < products.length; ++j) {
+                                if (products[j].Id == res[i]) {
+                                    $("#product_container").append("<li><a href=\"" + products[j].Url + "\">" + products[j].Name + "</a></li>");
+                                    break;
+                                }
+                            }
+                        }
+
+                        $("#product_container").append("</ul>");
+                    }
+                },
+                error: function (res) {
+                    alert(JSON.stringify(res));
+                }
+            });
+        }
+
+        $(document).ready(function () {
+
+            $('input[name="product_name"]').change(function () {
+                selectedItems.Name = $(this).val();
+                searchForProducts();
+            });
+
+            $('input[id^="property"]').change(function () {
+
+                var propertyName = $(this).attr('id').split('_')[1];
+                var propertyValue = $(this).attr('id').split('_')[2];
+                var isChecked = $(this).is(":checked");
+
+                if (isChecked) {
+                    var found = false;
+
+                    for (var i = 0; i < selectedItems.Properties.length; ++i) {
+                        if (selectedItems.Properties[i].Name == propertyName) {
+                            found = true;
+                            selectedItems.Properties[i].Values.push(propertyValue);
+                            break;
+                        }
+                    }
+
+                    if (!found) {
+                        var toAdd = {
+                            Name: propertyName,
+                            Values: [propertyValue]
+                        };
+
+                        selectedItems.Properties.push(toAdd);
+                    }
+                }
+                else {
+                    for (var i = 0; i < selectedItems.Properties.length; ++i) {
+                        if (selectedItems.Properties[i].Name == propertyName) {
+                            if (selectedItems.Properties[i].Values.length == 1) {
+                                selectedItems.Properties.splice(i, 1);
+                            }
+                            else {
+                                for (var j = 0; j < selectedItems.Properties[i].Values.length; ++j) {
+                                    if (selectedItems.Properties[i].Values[j] == propertyValue) {
+                                        selectedItems.Properties[i].Values.splice(j, 1);
+                                        break;
+                                    }
+                                }
+                            }
+
+                            break;
+                        }
+                    }
+                }
+
+                searchForProducts();
+            });
+        });
+    </script>
+    }

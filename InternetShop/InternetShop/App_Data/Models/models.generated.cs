@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f576226837856dd6")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4a6665cce1a569eb")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -53,9 +53,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Header Picture
 		///</summary>
 		[ImplementPropertyType("headerPicture")]
-		public IPublishedContent HeaderPicture
+		public Umbraco.Web.Models.ImageCropDataSet HeaderPicture
 		{
-			get { return this.GetPropertyValue<IPublishedContent>("headerPicture"); }
+			get { return this.GetPropertyValue<Umbraco.Web.Models.ImageCropDataSet>("headerPicture"); }
 		}
 
 		///<summary>

@@ -37,12 +37,15 @@
             </div>
         </div>
     </div>
+    <img style="width: 100%" src="@Model.Content.GetCropUrl("headerPicture", "banner")" />
+    @*
     @{
     var typedMediaPicker = Model.Content.GetPropertyValue<IPublishedContent>("headerPicture");
         <div class="container" style="margin-top:60px;">
         <img style="width: 100%; max-height: 300px;" src="@typedMediaPicker.Url" class="img-responsive" />
         </div>
     }
+    *@
     @{
     IPublishedContent current = (CurrentPage);
     Stack<dynamic> pages = new Stack<dynamic>();
