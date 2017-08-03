@@ -241,6 +241,7 @@ Umbraco.ModelsBuilder.Validation.MediaTypeModelValidator, Umbraco.ModelsBuilder,
 Umbraco.ModelsBuilder.Validation.MemberTypeModelValidator, Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.7.99, Culture=neutral, PublicKeyToken=null
+InternetShop.Umbraco.Api.BasketController, InternetShop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 InternetShop.Umbraco.Api.ProductController, InternetShop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6396.36621, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Persistence.Mappers.AccessMapper, Umbraco.Core, Version=1.0.6396.36621, Culture=neutral, PublicKeyToken=null
@@ -657,6 +658,7 @@ Umbraco.Web.Controllers.UmbProfileController, umbraco, Version=1.0.6396.36631, C
 Umbraco.Web.Controllers.UmbLoginStatusController, umbraco, Version=1.0.6396.36631, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, umbraco, Version=1.0.6396.36631, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, umbraco, Version=1.0.6396.36631, Culture=neutral, PublicKeyToken=null
+InternetShop.Umbraco.Api.BasketController, InternetShop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.WebApi.UmbracoApiController
 
@@ -769,6 +771,9 @@ Umbraco.Web.PropertyEditors.TrueFalsePropertyEditor, umbraco, Version=1.0.6396.3
 Our.Umbraco.NestedContent.PropertyEditors.NestedContentPropertyEditor, Our.Umbraco.NestedContent, Version=0.4.6286.19708, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6396.36621, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.PropertyEditors.PropertyEditor, Umbraco.Core, Version=1.0.6396.36621, Culture=neutral, PublicKeyToken=null
+
+Umbraco.Core.Deploy.IServiceConnector
+
 
 Umbraco.Core.Persistence.Mappers.BaseMapper
 Umbraco.Core.Persistence.Mappers.MapperForAttribute
