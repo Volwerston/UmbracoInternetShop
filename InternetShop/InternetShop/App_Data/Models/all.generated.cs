@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4a6665cce1a569eb")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "67453551a0b59c46")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -381,6 +381,33 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Discount: Discount (in %) for one item of product
+		///</summary>
+		[ImplementPropertyType("discount")]
+		public int Discount
+		{
+			get { return this.GetPropertyValue<int>("discount"); }
+		}
+
+		///<summary>
+		/// In Stock: Items available in stock
+		///</summary>
+		[ImplementPropertyType("inStock")]
+		public int InStock
+		{
+			get { return this.GetPropertyValue<int>("inStock"); }
+		}
+
+		///<summary>
+		/// Price: Price of one item of product
+		///</summary>
+		[ImplementPropertyType("price")]
+		public int Price
+		{
+			get { return this.GetPropertyValue<int>("price"); }
+		}
+
+		///<summary>
 		/// Properties' Values: Defines values for properties defined in "Properties' List"
 		///</summary>
 		[ImplementPropertyType("propertiesValues")]
@@ -484,6 +511,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Title
 		{
 			get { return this.GetPropertyValue<string>("title"); }
+		}
+	}
+
+	/// <summary>Basket</summary>
+	[PublishedContentModel("basket")]
+	public partial class Basket : Layout12Cols
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "basket";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Basket(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Basket, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

@@ -15,3 +15,7 @@
         @Html.Partial(Model.Content.GetPropertyValue<string>("rightPartialViewName"))
     </div>
 </div>
+
+@section scripts{
+@RenderSection("otherScripts", required: false)
+}

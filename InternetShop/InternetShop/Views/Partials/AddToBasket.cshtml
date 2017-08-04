@@ -75,6 +75,7 @@
         $('#add_product_@(Model)').click(function(){
         
             var product = {
+            Id: @Model,
             Name: $("#product_name_@(Model)").html().trim(),
             Items: $("#product_items_@(Model)").val(),
             Properties: []
