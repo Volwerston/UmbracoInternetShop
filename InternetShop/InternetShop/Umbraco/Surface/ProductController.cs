@@ -1,22 +1,26 @@
 ﻿using InternetShop.Models;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Web.Http;
-using umbraco.NodeFactory;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Umbraco.Core;
 using Umbraco.Core.Models;
-using Umbraco.Core.Services;
-using Umbraco.Web;
-using Umbraco.Web.WebApi;
+using Umbraco.Web.Mvc;
 
-namespace InternetShop.Umbraco.Api
+namespace InternetShop.Umbraco.Surface
 {
-    public class ProductController : UmbracoApiController
+    public class ProductController : SurfaceController
     {
         [HttpPost]
-        public IHttpActionResult Search([FromBody]ProductSearchOptions selectedItems)
+        public ActionResult Search(ProductSearchOptions selectedItems)
         {
             try
             {
+                if (selectedItems.Name == null) selectedItems.Name = "";
+                if (selectedItems.Properties == null) selectedItems.Properties = new List<Models.Property>();
+
                 var category = ApplicationContext.Services.ContentService.GetById(selectedItems.CategoryId);
                 var products = category.Children();
                 List<int> ids = new List<int>();
@@ -25,7 +29,7 @@ namespace InternetShop.Umbraco.Api
                 {
                     bool ok = true;
 
-                    if(!string.IsNullOrEmpty(selectedItems.Name.Trim()) && !product.Name.Trim().ToLower().Contains(selectedItems.Name.Trim().ToLower()))
+                    if (!string.IsNullOrEmpty(selectedItems.Name.Trim()) && !product.Name.Trim().ToLower().Contains(selectedItems.Name.Trim().ToLower()))
                     {
                         continue;
                     }
@@ -76,11 +80,11 @@ namespace InternetShop.Umbraco.Api
                     }
                 }
 
-                return Ok(ids);
+                return PartialView("Partials/ProductList", ids);
             }
             catch
             {
-                return InternalServerError();
+                return PartialView("Partials/ProductList", new List<int>());
             }
         }
     }

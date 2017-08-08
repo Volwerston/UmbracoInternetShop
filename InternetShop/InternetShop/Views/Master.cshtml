@@ -2,7 +2,11 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
 	Layout = null;
+	
+    var currentPageNode = Umbraco.Content((int)CurrentPage.Id);
+    var cssName = "/css/" + currentPageNode.DocumentTypeAlias + ".css";
 }
+
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +19,7 @@
         rel="stylesheet" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
         crossorigin="anonymous" >
+       <link rel="stylesheet" href="@cssName">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

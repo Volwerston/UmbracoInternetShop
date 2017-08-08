@@ -1,0 +1,9 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IEnumerable<IPublishedContent>>
+
+<div class="row">
+    @foreach(var element in Model){
+        <div class="col-sm-4">
+            @Html.Partial("CategoryBlock", element)
+        </div>
+    }
+</div>

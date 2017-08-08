@@ -4,10 +4,10 @@
     var root = Model.AncestorOrSelf(1);
 }
 
-<ul>
+</ul>
     @foreach (var page in root.Children.Where("Visible"))
     {
-        <li>
+        <li class="root-menu">
             <a href="@page.Url">@page.Name</a>
         </li>
     }

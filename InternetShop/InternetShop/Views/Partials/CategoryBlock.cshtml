@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
+@{
+var image = Model.GetPropertyValue<IPublishedContent>("banner");
+}
+
+<div onclick="location.href='@Model.Url'" class="row" style="background-color: lightblue; cursor: pointer">
+    <div class="col-xs-12">
+        <img class="img-responsive" alt="Banner" style="padding: 10px;" src="@image.Url" />
+    </div>
+    <div class="col-xs-12">
+        <h4 style="text-align: center">@Model.Name</h4>
+    </div>
+</div>
