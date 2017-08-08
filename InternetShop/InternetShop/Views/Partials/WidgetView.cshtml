@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Tuple<IPublishedContent, IPublishedContent>>
+
+@{
+var type = Model.Item1.GetPropertyValue<string>("type");
+}
+
+@if(type == "Root categories"){
+  @Html.Partial("RootCategories", Model.Item2)
+}
+
+@if(type == "Category properties"){
+@Html.Partial("CategoryProperties", Model.Item2);
+}
+
+@if(type == "Subcategories"){
+ @Html.Partial("SubCategories", Model.Item2);
+}
+
+@if(type == "Custom property"){
+ @Html.Partial("CustomPropertyWidget", Model)
+}

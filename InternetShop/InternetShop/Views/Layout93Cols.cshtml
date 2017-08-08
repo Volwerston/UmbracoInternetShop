@@ -4,11 +4,21 @@
 	Layout = "Master.cshtml";
 }
 
-<div class="col-xs-9">
+@{
+var rightOnes = Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("rightWidgets") ?? new List<IPublishedContent>();
+}
+
+<div class="col-sm-9">
     @RenderBody()
 </div>
-<div class="col-xs-3">
-    @Html.Partial(Model.Content.GetPropertyValue<string>("rightPartialViewName"))
+<div class="col-sm-3">
+    @foreach(var widget in rightOnes){
+    <div class="row">
+        <div class="col-xs-12">
+            @Html.Partial("WidgetView", new Tuple<IPublishedContent, IPublishedContent>(widget, Model.Content))
+        </div>
+    </div>
+    }
 </div>
 
 @section scripts{

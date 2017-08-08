@@ -32,20 +32,24 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/root-categories/">Categories</a></li>
-                    <li><a href="#">Basket</a></li>
+                    <li><a href="/basket/">Basket</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <img style="width: 100%" src="@Model.Content.GetCropUrl("headerPicture", "banner")" />
-    @*
     @{
-    var typedMediaPicker = Model.Content.GetPropertyValue<IPublishedContent>("headerPicture");
-        <div class="container" style="margin-top:60px;">
-        <img style="width: 100%; max-height: 300px;" src="@typedMediaPicker.Url" class="img-responsive" />
-        </div>
+        IPublishedContent curr = Model.Content;
+        
+        while(curr != null){
+        if(!string.IsNullOrEmpty(curr.GetPropertyValue<string>("headerFormat"))){
+        <img style="width: 100%" src="@curr.GetCropUrl("headerPicture", curr.GetPropertyValue<string>("headerFormat"))" />
+        break;
+        }
+        
+        curr = curr.Parent;
+        }
     }
-    *@
+    
     @{
     IPublishedContent current = (CurrentPage);
     Stack<dynamic> pages = new Stack<dynamic>();

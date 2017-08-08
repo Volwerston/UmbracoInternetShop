@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "67453551a0b59c46")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "36418655987b3ff0")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -47,6 +47,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Master, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Header format: Size of a header
+		///</summary>
+		[ImplementPropertyType("headerFormat")]
+		public string HeaderFormat
+		{
+			get { return this.GetPropertyValue<string>("headerFormat"); }
 		}
 
 		///<summary>
@@ -120,12 +129,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Left Partial View Name
+		/// Left Widgets: Contains all widgets to be displayed on the left
 		///</summary>
-		[ImplementPropertyType("leftPartialViewName")]
-		public string LeftPartialViewName
+		[ImplementPropertyType("leftWidgets")]
+		public IEnumerable<IPublishedContent> LeftWidgets
 		{
-			get { return this.GetPropertyValue<string>("leftPartialViewName"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("leftWidgets"); }
 		}
 	}
 
@@ -181,12 +190,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Right Partial View Name
+		/// Right Widgets: Contains all widgets to be displayed on the right
 		///</summary>
-		[ImplementPropertyType("rightPartialViewName")]
-		public string RightPartialViewName
+		[ImplementPropertyType("rightWidgets")]
+		public IEnumerable<IPublishedContent> RightWidgets
 		{
-			get { return this.GetPropertyValue<string>("rightPartialViewName"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("rightWidgets"); }
 		}
 	}
 
@@ -216,21 +225,21 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Left Partial View Name
+		/// Left Widgets: Contains all widgets to be displayed on the left
 		///</summary>
-		[ImplementPropertyType("leftPartialViewName")]
-		public string LeftPartialViewName
+		[ImplementPropertyType("leftWidgets")]
+		public IEnumerable<IPublishedContent> LeftWidgets
 		{
-			get { return this.GetPropertyValue<string>("leftPartialViewName"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("leftWidgets"); }
 		}
 
 		///<summary>
-		/// Right Partial View Name
+		/// Right Widgets: Contains all widgets to be displayed on the right
 		///</summary>
-		[ImplementPropertyType("rightPartialViewName")]
-		public string RightPartialViewName
+		[ImplementPropertyType("rightWidgets")]
+		public IEnumerable<IPublishedContent> RightWidgets
 		{
-			get { return this.GetPropertyValue<string>("rightPartialViewName"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("rightWidgets"); }
 		}
 	}
 
@@ -399,15 +408,6 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesValues"); }
 		}
-
-		///<summary>
-		/// Right Partial View Name
-		///</summary>
-		[ImplementPropertyType("rightPartialViewName")]
-		public string RightPartialViewName
-		{
-			get { return this.GetPropertyValue<string>("rightPartialViewName"); }
-		}
 	}
 
 	/// <summary>Carousel</summary>
@@ -521,6 +521,68 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Basket, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Widget</summary>
+	[PublishedContentModel("widget")]
+	public partial class Widget : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "widget";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Widget(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Widget, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Custom Property Alias: Alias of the property to be displayed. Fill in only in cas you chose "Custom property" as widget type
+		///</summary>
+		[ImplementPropertyType("customPropertyAlias")]
+		public string CustomPropertyAlias
+		{
+			get { return this.GetPropertyValue<string>("customPropertyAlias"); }
+		}
+
+		///<summary>
+		/// Custom widget display type: Choose the way you want your custom widget information to be displayed
+		///</summary>
+		[ImplementPropertyType("customWidgetDisplayType")]
+		public string CustomWidgetDisplayType
+		{
+			get { return this.GetPropertyValue<string>("customWidgetDisplayType"); }
+		}
+
+		///<summary>
+		/// Type: Type of the widget. Choose "Custom property" to display text value of a specific document property
+		///</summary>
+		[ImplementPropertyType("type")]
+		public string Type
+		{
+			get { return this.GetPropertyValue<string>("type"); }
+		}
+
+		///<summary>
+		/// Widget title: Title of the widget that will be displayed. Defaults to an empty string
+		///</summary>
+		[ImplementPropertyType("widgetTitle")]
+		public string WidgetTitle
+		{
+			get { return this.GetPropertyValue<string>("widgetTitle"); }
 		}
 	}
 

@@ -1,8 +1,8 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
 
 @{
     var rowIndex = 0;
-    var tbl =  Model.Content.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesList");
+    var tbl =  Model.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesList");
 }
 <div>
     <div class="row">
