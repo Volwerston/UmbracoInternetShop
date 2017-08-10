@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
@@ -46,22 +47,22 @@ namespace InternetShop.Umbraco.Api
         }
 
         [HttpPost]
-        public string PostToServer(List<BasketEntry> entries)
+        public ActionResult PostToServer(List<BasketEntry> entries)
         {
             try
             {
                 Session["basket"] = entries;
-                return "OK";
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
             catch
             {
-                return "OK";
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
             }
         }
 
 
         [HttpPost]
-        public string AddProductToBasket(BasketEntry entry)
+        public ActionResult AddProductToBasket(BasketEntry entry)
         {
             try
             {
@@ -121,11 +122,11 @@ namespace InternetShop.Umbraco.Api
                     Session["basket"] = entries;
                 }
 
-                return "OK";
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
             catch
             {
-                return "OK";
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
             }
         }
     }

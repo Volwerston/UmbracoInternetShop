@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5b830d6b30c7c150")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e45cff315f77032c")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -601,6 +601,104 @@ namespace Umbraco.Web.PublishedContentModels
 		public string WidgetTitle
 		{
 			get { return this.GetPropertyValue<string>("widgetTitle"); }
+		}
+	}
+
+	/// <summary>Comment</summary>
+	[PublishedContentModel("comment")]
+	public partial class Comment : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "comment";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Comment(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Comment, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Adding Time
+		///</summary>
+		[ImplementPropertyType("addingTime")]
+		public DateTime AddingTime
+		{
+			get { return this.GetPropertyValue<DateTime>("addingTime"); }
+		}
+
+		///<summary>
+		/// Advantages
+		///</summary>
+		[ImplementPropertyType("advantages")]
+		public string Advantages
+		{
+			get { return this.GetPropertyValue<string>("advantages"); }
+		}
+
+		///<summary>
+		/// Disadvantages
+		///</summary>
+		[ImplementPropertyType("disadvantages")]
+		public string Disadvantages
+		{
+			get { return this.GetPropertyValue<string>("disadvantages"); }
+		}
+
+		///<summary>
+		/// Estimate
+		///</summary>
+		[ImplementPropertyType("estimate")]
+		public int Estimate
+		{
+			get { return this.GetPropertyValue<int>("estimate"); }
+		}
+
+		///<summary>
+		/// Message Text
+		///</summary>
+		[ImplementPropertyType("messageText")]
+		public string MessageText
+		{
+			get { return this.GetPropertyValue<string>("messageText"); }
+		}
+
+		///<summary>
+		/// Response
+		///</summary>
+		[ImplementPropertyType("response")]
+		public string Response
+		{
+			get { return this.GetPropertyValue<string>("response"); }
+		}
+
+		///<summary>
+		/// Sender Email
+		///</summary>
+		[ImplementPropertyType("senderEmail")]
+		public string SenderEmail
+		{
+			get { return this.GetPropertyValue<string>("senderEmail"); }
+		}
+
+		///<summary>
+		/// Sender Name
+		///</summary>
+		[ImplementPropertyType("senderName")]
+		public string SenderName
+		{
+			get { return this.GetPropertyValue<string>("senderName"); }
 		}
 	}
 

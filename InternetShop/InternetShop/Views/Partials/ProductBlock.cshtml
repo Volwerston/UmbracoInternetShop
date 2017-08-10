@@ -1,19 +1,17 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<int>
-
 @{
-var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
-IPublishedContent content = umbracoHelper.TypedContent(Model);
-var imageSrc = content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel").First().GetPropertyValue<IPublishedContent>("image").Url;
+    var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+    IPublishedContent content = umbracoHelper.TypedContent(Model);
+    var imageSrc = content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel").First().GetPropertyValue<IPublishedContent>("image").Url;
 }
-
 <div class="row" style="background-color: lightblue; padding: 10px;">
     <div style="cursor: pointer" onclick="location.href='@content.Url'">
-    <div class="col-xs-12">
-        <img src="@imageSrc" class="img-responsive" />
-    </div>
-    <div class="col-xs-12">
-        <p style="text-align: center">@content.Name</p>
-    </div>
+        <div class="col-xs-12">
+            <img src="@imageSrc" class="img-responsive" />
+        </div>
+        <div class="col-xs-12">
+            <p style="text-align: center">@content.Name</p>
+        </div>
     </div>
     <div class="col-xs-12">
         @Html.Partial("AddToBasket", Model)

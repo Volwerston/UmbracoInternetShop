@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
+@{
+var name = Model.GetPropertyValue<string>("senderName");
+var time = Model.GetPropertyValue<DateTime>("addingTime").ToString();
+var message = Model.GetPropertyValue<string>("messageText");
+var adv = Model.GetPropertyValue<string>("advantages");
+var disadv = Model.GetPropertyValue<string>("disadvantages");
+var estimate = Model.GetPropertyValue<int>("estimate");
+var response = Model.GetPropertyValue<string>("response");
+}
+<div class="row" style="background-color: lightblue; border-radius: 4px; border: 3px solid white;">
+    <div class="col-xs-12" style="word-break: break-all">
+        <p style="text-align: center; font-weight: bold">@name</p>
+    </div>
+    <div class="col-xs-12" style="word-break: break-all">
+        <p style="text-align: center; color: grey;">@time</p>
+    </div>
+    <div class="col-xs-12" style="word-break: break-all">
+        <p style="text-align: center;">@message</p>
+    </div>
+    @if(!string.IsNullOrEmpty(adv)){
+    <div class="col-xs-12" style="word-break: break-all">
+        <p><b>Advantages: </b>@adv </p>
+    </div>
+    <div class="col-xs-12" style="word-break: break-all">
+        <p><b>Disadvantages: </b>@disadv </p>
+    </div>
+    <div class="col-xs-12" style="word-break: break-all">
+        <p><b>Estimate: </b>@estimate / 10 </p>
+    </div>
+    }
+    
+    @if(!string.IsNullOrEmpty(response)){
+        <hr/>
+        <div class="col-xs-12" style="word-break: break-all">
+            <p><b>Response:</b> @response</p>
+        </div>
+    }
+</div>
