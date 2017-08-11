@@ -1,14 +1,14 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.StartPage>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
-@{
-	Layout = "Layout12Cols.cshtml";
-}
+    @using ContentModels = Umbraco.Web.PublishedContentModels;
+    @{
+    Layout = "Layout12Cols.cshtml";
+    }
 
-@{
-var elements = Model.Content.Children().Where(x => x.IsVisible());
-foreach(var item in elements)
-{
-   var el = item.GetPropertyValue<IEnumerable<IPublishedContent>>("myCarousel");
+    @{
+    var elements = Model.Content.Children().Where(x => x.IsVisible());
+    foreach(var item in elements)
+    {
+    var el = item.GetPropertyValue<IEnumerable<IPublishedContent>>("myCarousel");
    Html.RenderPartial("HorizontalDottedCarousel", el);
 }
 

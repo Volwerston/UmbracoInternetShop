@@ -1,8 +1,8 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Master>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = null;
-	
+    Layout = null;
+
     var currentPageNode = Umbraco.Content((int)CurrentPage.Id);
     var cssName = "/css/" + currentPageNode.DocumentTypeAlias + ".css";
 }
@@ -14,12 +14,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@Umbraco.Field("pageTitle", recursive: true)</title>
-    <link 
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel="stylesheet" 
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-        crossorigin="anonymous" >
-       <link rel="stylesheet" href="@cssName">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="@cssName" />
+    <link rel="stylesheet" href="/css/jquery.growl.css">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -44,35 +44,37 @@
     </div>
     @{
         IPublishedContent curr = Model.Content;
-        
-        while(curr != null){
-        if(!string.IsNullOrEmpty(curr.GetPropertyValue<string>("headerFormat"))){
-        <img style="width: 100%" src="@curr.GetCropUrl("headerPicture", curr.GetPropertyValue<string>("headerFormat"))" />
-        break;
+
+        while (curr != null)
+        {
+            if (!string.IsNullOrEmpty(curr.GetPropertyValue<string>("headerFormat")))
+            {
+                <img style="width: 100%" src="@curr.GetCropUrl("headerPicture", curr.GetPropertyValue<string>("headerFormat"))" />
+                break;
+            }
+
+            curr = curr.Parent;
         }
-        
-        curr = curr.Parent;
-        }
-    }
-    
-    @{
-    IPublishedContent current = (CurrentPage);
-    Stack<dynamic> pages = new Stack<dynamic>();
-    while (current.Level > 1)
-    {
-        pages.Push(current);
-        current = current.Parent;
-    }
     }
 
-<ol class="breadcrumb">
-    <li><a href="/">Home</a></li>
-    @foreach (var page in pages)
-    {
-        var cls = page.Id == CurrentPage.Id ? "current" : "";
-    <li class="@cls"><a href="@page.Url">@page.Name.ToLower()</a></li>
-    } 
-</ol>
+    @{
+        IPublishedContent current = (CurrentPage);
+        Stack<dynamic> pages = new Stack<dynamic>();
+        while (current.Level > 1)
+        {
+            pages.Push(current);
+            current = current.Parent;
+        }
+    }
+
+    <ol class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        @foreach (var page in pages)
+        {
+            var cls = page.Id == CurrentPage.Id ? "current" : "";
+            <li class="@cls"><a href="@page.Url">@page.Name.ToLower()</a></li>
+        }
+    </ol>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -80,16 +82,35 @@
             <p>&copy; @DateTime.Now.Year</p>
         </footer>
     </div>
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
     </script>
-    <script 
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 4
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
     </script>
+    <script src="/scripts/jquery.growl.js"
+            type="text/javascript">
+    </script>
+
+    <script type="text/javascript">
+        function displayMessage(aTitle, aText) {
+            if (aTitle == "Success") {
+                $.growl.notice({ title: aTitle, message: aText });
+            }
+            else if (aTitle == "Warning") {
+                $.growl.warning({ title: aTitle, message: aText });
+            }
+            else if (aTitle == "Error") {
+                $.growl.error({ title: aTitle, message: aText });
+            }
+            else {
+                $.growl({ title: aTitle, message: aText });
+            }
+        }
+    </script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,165 +1,193 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Product>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Layout39Cols.cshtml";
+    Layout = "Layout39Cols.cshtml";
 }
 
 <div class="row">
-<div class="col-sm-6">
-@Html.Partial("HorizontalDottedCarousel", Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"))
+    <div class="col-sm-6">
+        @Html.Partial("HorizontalDottedCarousel", Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"))
+        <br />
 
-<h2>Properties</h2>
+        <div class="row">
+            <div class="col-xs-8 col-xs-push-3">
+                <h3>Properties</h3>
+                <br />
+                @Html.Partial("ProductPropertyList", Model.Content.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesValues"))
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-6 col-xs-10 col-sm-push-3 col-xs-push-1">
+                @Html.Partial("AddToBasket", (int)CurrentPage.Id)
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="col-sm-6">
+        <h4 style="text-align: center">Comments</h4>
+        <br />
+        <div style="max-height: 400px; overflow-x: hidden; overflow-y: scroll;">
+            @{
+                var comments = Model.Content.Children().Where("Visible").Reverse();
 
-@Html.Partial("ProductPropertyList", Model.Content.GetPropertyValue<TableEditor.Models.TableEditorModel>("propertiesValues"))
-
-@Html.Partial("AddToBasket", (int)CurrentPage.Id)
-</div>
-<div class="col-sm-6">
-    <h4 style="text-align: center">Comments</h4>
-    <br/>
-    <div style="max-height: 400px; overflow-x: hidden; overflow-y: scroll;">
-@{
-    var comments = Model.Content.Children().Where("Visible").Reverse();
-    
-    if(comments.Count() > 0){
-    foreach(var comment in comments){
-        @Html.Partial("CommentBlock", comment)
-    }
-    }
-    else{
-    <p style="text-align: center">No comments were found. Be the first one!</p>
-    }
-}
-</div>
-    <button type="button" style="margin: 10px;" data-toggle="modal" data-target="#commentModal" class="btn btn-success btn-sm col-xs-6 col-xs-push-3">Add comment</button>
-</div>
+                if (comments.Count() > 0)
+                {
+                    foreach (var comment in comments)
+                    {
+                        @Html.Partial("CommentBlock", comment)
+                    }
+                }
+                else
+                {
+                    <p style="text-align: center">No comments were found. Be the first one!</p>
+                }
+            }
+        </div>
+        <button type="button" style="margin: 10px;" data-toggle="modal" data-target="#commentModal" class="btn btn-success btn-sm col-xs-6 col-xs-push-3">Add comment</button>
+    </div>
 </div>
 
 <div id="commentModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#estimate">Estimate</a></li>
-            <li><a data-toggle="tab" href="#comment">Comment</a></li>
-        </ul>
-        <div class="tab-content">
-            <div id="estimate" class="tab-pane fade in active">
-            <div class="row" style="margin-top: 10px;">
-            <div class="col-sm-6 col-xs-10 col-sm-push-3 col-xs-push-1">
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Message" name="estimate_messageText"></textarea>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Advantages" name="advantages" />
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Disadvantages" name="disadvantages" />
-                </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" placeholder="Estimate (1-10)" name="estimate" />
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Your name" name="estimate_senderName" />
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Your email" name="estimate_senderEmail" />
-                </div>
-                <div class="form-group">
-                    <button type="button" id="send_estimate" class="btn btn-success col-sm-6 col-sm-push-3">Add</button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#estimate">Estimate</a></li>
+                    <li><a data-toggle="tab" href="#comment">Comment</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="estimate" class="tab-pane fade in active">
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-6 col-xs-10 col-sm-push-3 col-xs-push-1">
+                                <form class="form-horizontal" id="send_form_estimate" data-toggle="validator">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Message" name="estimate_messageText" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Advantages" name="advantages" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Disadvantages" name="disadvantages" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" placeholder="Estimate (1-10)" min="0" max="10" name="estimate" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your name" name="estimate_senderName" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Your email" name="estimate_senderEmail" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success col-sm-6 col-sm-push-3">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comment" class="tab-pane fade">
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-6 col-xs-10 col-sm-push-3 col-xs-push-1">
+                                <form class="form-horizontal" id="send_form_question" data-toggle="validator">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Message" name="question_messageText" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your name" name="question_senderName" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Your email" name="question_senderEmail" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input value="Add" type="submit" class="btn btn-success col-sm-6 col-sm-push-3" required />
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div id="comment" class="tab-pane fade">
-             <div class="row" style="margin-top: 10px;">
-            <div class="col-sm-6 col-xs-10 col-sm-push-3 col-xs-push-1">
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Message" name="question_messageText"></textarea>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Your name" name="question_senderName" />
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Your email" name="question_senderEmail" />
-                </div>
-                <div class="form-group">
-                    <button type="button" id="send_question" class="btn btn-success col-sm-6 col-sm-push-3">Add</button>
-                </div>
-            </div>
-            </div>
-            </div>
-        </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
-  </div>
 </div>
 
 
 @section otherScripts{
-<script type="text/javascript">
-    
-    
-    function buildQuestion(){
-        var toReturn = {};
-        
-        toReturn.ProductId = '@((int)CurrentPage.Id)';
-        toReturn.MessageText = $('textarea[name="question_messageText"]').val();
-        toReturn.SenderName = $('input[name="question_senderName"]').val();
-        toReturn.SenderEmail = $('input[name="question_senderEmail"]').val();
-        
-        return toReturn;
-    }
-    
-    function buildEstimate(){
-        var toReturn = {};
-        
-        toReturn.ProductId = '@((int)CurrentPage.Id)';
-        toReturn.MessageText = $('textarea[name="estimate_messageText"]').val();
-        toReturn.SenderName = $('input[name="estimate_senderName"]').val();
-        toReturn.SenderEmail = $('input[name="estimate_senderEmail"]').val();
-        toReturn.Estimate = $('input[name="estimate"]').val();
-        toReturn.Advantages = $('input[name="advantages"]').val();
-        toReturn.Disadvantages = $('input[name="disadvantages"]').val();
-        
-        return toReturn;
-    }
-    
-    $(document).ready(function(){
-        $('button[id^="send"]').click(function(){
-            var type = $(this).attr('id').split('_')[1];
-            var toPass = null;
-            if(type == "question"){
-                toPass = buildQuestion();
-            }
-            else{
-                toPass = buildEstimate();
-            }
-            
-            if(toPass != null){
-                $.ajax({
-                    method: 'POST',
-                    url: '/Umbraco/Surface/Comment/Add',
-                    contentType: 'application/json; charset=utf-8',
-                    data: JSON.stringify(toPass),
-                    success: function(res){
-                        location.reload();
-                    },
-                    error: function(res){
-                        location.reload();
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+    <script type="text/javascript">
+
+
+        function buildQuestion() {
+            var toReturn = {};
+
+            toReturn.ProductId = '@((int)CurrentPage.Id)';
+            toReturn.MessageText = $('textarea[name="question_messageText"]').val();
+            toReturn.SenderName = $('input[name="question_senderName"]').val();
+            toReturn.SenderEmail = $('input[name="question_senderEmail"]').val();
+
+            return toReturn;
+        }
+
+        function buildEstimate() {
+            var toReturn = {};
+
+            toReturn.ProductId = '@((int)CurrentPage.Id)';
+            toReturn.MessageText = $('textarea[name="estimate_messageText"]').val();
+            toReturn.SenderName = $('input[name="estimate_senderName"]').val();
+            toReturn.SenderEmail = $('input[name="estimate_senderEmail"]').val();
+            toReturn.Estimate = $('input[name="estimate"]').val();
+            toReturn.Advantages = $('input[name="advantages"]').val();
+            toReturn.Disadvantages = $('input[name="disadvantages"]').val();
+
+            return toReturn;
+        }
+
+        function sendComment(toPass) {
+            $.ajax({
+                method: 'POST',
+                url: '/Umbraco/Surface/Comment/Add',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify(toPass),
+                success: function (res) {
+                    window.displayMessage("Success", "Your message was added. It will soon appear on this page");
+                },
+                error: function (res) {
+                    window.displayMessage("Error", res.statusText);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('form[id^="send_form"]').validator().submit(function (e) {
+                if (!e.isDefaultPrevented()) {
+                    var type = $(this).attr('id').split('_')[2];
+                    var toPass = null;
+                    if (type == "question") {
+                        toPass = buildQuestion();
                     }
-                });
-                
-                
-            }
+                    else {
+                        toPass = buildEstimate();
+                    }
+
+                    sendComment(toPass);
+                    $("#commentModal").modal("hide");
+                    return false;
+                }
+            });
         });
-    });
-</script>
+    </script>
 }

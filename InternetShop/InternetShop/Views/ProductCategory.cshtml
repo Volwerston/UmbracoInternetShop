@@ -8,7 +8,7 @@
     @{ var selection = Model.Content.Children.Where(x => x.IsVisible()).Select(y => y.Id); }
 
     <input type="text" class="form-control" placeholder="Product name" name="product_name" />
-    <br/>
+    <br />
     <div id="product_container">
         @if (selection.Any())
         {

@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Umbraco.Core;
@@ -55,8 +56,10 @@ namespace InternetShop.Umbraco.Surface
                                         }
                                         else
                                         {
-                                            if (currRow[++counter] == null || currRow[counter].value == "") ok = false;
+                                            if (currRow.Count == (counter+1) || currRow[counter].value == "") ok = false;
                                         }
+
+                                        ++counter;
                                     }
 
                                     if (!ok) break;
