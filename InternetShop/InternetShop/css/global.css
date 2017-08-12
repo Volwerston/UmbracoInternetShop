@@ -1,0 +1,20 @@
+.categoryBlock{
+	background-color: lightblue; 
+	cursor: pointer;
+}
+
+.commentBlock{
+	background-color: lightblue; 
+	border-radius: 4px; 
+	border: 1px solid white;	
+}
+
+.commentItem{
+	word-break: break-all;	
+}
+
+.productBlock{
+	background-color: lightblue;
+	padding: 10px;	
+	border: 1px solid white;
+}

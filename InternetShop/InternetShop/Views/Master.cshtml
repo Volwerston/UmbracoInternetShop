@@ -19,6 +19,7 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous" />
     <link rel="stylesheet" href="@cssName" />
+    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/jquery.growl.css">
 </head>
 <body>
@@ -94,21 +95,7 @@
             type="text/javascript">
     </script>
 
-    <script type="text/javascript">
-        function displayMessage(aTitle, aText) {
-            if (aTitle == "Success") {
-                $.growl.notice({ title: aTitle, message: aText });
-            }
-            else if (aTitle == "Warning") {
-                $.growl.warning({ title: aTitle, message: aText });
-            }
-            else if (aTitle == "Error") {
-                $.growl.error({ title: aTitle, message: aText });
-            }
-            else {
-                $.growl({ title: aTitle, message: aText });
-            }
-        }
+    <script type="text/javascript" src="/scripts/master.js">
     </script>
 
     @RenderSection("scripts", required: false)

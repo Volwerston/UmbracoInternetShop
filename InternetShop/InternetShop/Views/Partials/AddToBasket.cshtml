@@ -58,12 +58,13 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" id="add_product_@(Model)" data-dismiss="modal">Add</button>
+                <button type="button" class="btn btn-success" id="add_product_@(Model)">Add</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -73,11 +74,17 @@
         $('#add_product_@(Model)').click(function(){
 
             var product = {
-                Id: @Model,
+                Id: '@Model',
                 Name: $("#product_name_@(Model)").html().trim(),
                 Items: $("#product_items_@(Model)").val(),
                 Properties: []
             };
+            
+            if(product.Items <= 0){
+                window.displayMessage("Warning", "You cannot specify a non-positive number of products");
+                $("#product_items_@(Model)").val(1);
+                return;
+            }
 
 
             $('[id^="property_value_@(Model)"]').each(function(key,value){
@@ -107,6 +114,8 @@
                     displayMessage("Error", "Internal server error");
                 }
             });
+            
+            $("#product_modal_@Model").modal("hide");
         });
     });
 </script>
