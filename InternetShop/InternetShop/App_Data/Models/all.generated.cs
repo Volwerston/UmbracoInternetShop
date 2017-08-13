@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e45cff315f77032c")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fff1630fdf4a7f14")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -715,6 +715,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string SenderName
 		{
 			get { return this.GetPropertyValue<string>("senderName"); }
+		}
+	}
+
+	/// <summary>Purchase</summary>
+	[PublishedContentModel("purchase")]
+	public partial class Purchase : Layout363Cols
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "purchase";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Purchase(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Purchase, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

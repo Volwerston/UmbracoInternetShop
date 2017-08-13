@@ -415,6 +415,9 @@
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.doctypepicker.html" />
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.editor.html" />
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.html" />
+    <Content Include="css\global.css" />
+    <Content Include="css\intermediateCategory.css" />
+    <Content Include="css\jquery.growl.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -424,6 +427,11 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="scripts\basket.js" />
+    <Content Include="scripts\jquery.growl.js" />
+    <Content Include="scripts\master.js" />
+    <Content Include="scripts\product.js" />
+    <Content Include="scripts\productCategory.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -3500,6 +3508,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Auxiliary\MailBodyBuilder.cs" />
+    <Compile Include="Models\Auxiliary\MailFooterBuilder.cs" />
+    <Compile Include="Models\Auxiliary\MailHeaderBuilder.cs" />
+    <Compile Include="Models\Auxiliary\IBuilder.cs" />
+    <Compile Include="Models\Auxiliary\IDirector.cs" />
+    <Compile Include="Models\Auxiliary\MailContext.cs" />
+    <Compile Include="Models\Auxiliary\MailDirector.cs" />
     <Compile Include="Models\BasketEntry.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\ProductSearchOptions.cs" />

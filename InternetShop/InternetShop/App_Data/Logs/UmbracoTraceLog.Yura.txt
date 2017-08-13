@@ -1,223 +1,581 @@
-﻿ 2017-08-12 11:43:07,261 [P7516/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
- 2017-08-12 11:43:07,294 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
- 2017-08-12 11:43:07,303 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 9ms)
- 2017-08-12 11:43:07,486 [P7516/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
- 2017-08-12 11:43:07,487 [P7516/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
- 2017-08-12 11:43:07,489 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:08,614 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1125ms)
- 2017-08-12 11:43:08,614 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
- 2017-08-12 11:43:08,615 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
- 2017-08-12 11:43:08,785 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:08,786 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:08,786 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
- 2017-08-12 11:43:08,787 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
- 2017-08-12 11:43:08,788 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:08,788 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:08,789 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
- 2017-08-12 11:43:08,790 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
- 2017-08-12 11:43:08,802 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:08,802 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:08,803 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
- 2017-08-12 11:43:08,803 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
- 2017-08-12 11:43:08,804 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:08,804 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:08,804 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
- 2017-08-12 11:43:08,805 [P7516/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
- 2017-08-12 11:43:10,860 [P7516/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
- 2017-08-12 11:43:11,406 [P7516/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
- 2017-08-12 11:43:11,773 [P7516/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
- 2017-08-12 11:43:12,039 [P7516/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
- 2017-08-12 11:43:12,083 [P7516/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 5022ms)
- 2017-08-12 11:43:16,595 [P7516/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
- 2017-08-12 11:43:17,305 [P7516/D2/T10] INFO  umbraco.content - Load Xml from file...
- 2017-08-12 11:43:17,312 [P7516/D2/T10] INFO  umbraco.content - Loaded Xml from file.
- 2017-08-12 11:43:18,011 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:18,012 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:18,012 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
- 2017-08-12 11:43:18,013 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 1ms)
- 2017-08-12 11:43:19,441 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:19,442 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:19,443 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
- 2017-08-12 11:43:19,444 [P7516/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 1ms)
- 2017-08-12 11:43:23,209 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:23,210 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:23,210 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
- 2017-08-12 11:43:23,211 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 1ms)
- 2017-08-12 11:43:26,021 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:26,022 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:26,022 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
- 2017-08-12 11:43:26,023 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
- 2017-08-12 11:43:26,547 [P7516/D2/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ystetskyy333@gmail.com from IP address ::1
- 2017-08-12 11:43:26,550 [P7516/D2/T13] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ystetskyy333@gmail.com logged in from IP address ::1
- 2017-08-12 11:43:26,865 [P7516/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:26,866 [P7516/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:26,866 [P7516/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
- 2017-08-12 11:43:26,867 [P7516/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 1ms)
- 2017-08-12 11:43:26,997 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:26,998 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:26,998 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
- 2017-08-12 11:43:26,999 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 0ms)
- 2017-08-12 11:43:27,018 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:27,019 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:27,019 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
- 2017-08-12 11:43:27,019 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
- 2017-08-12 11:43:27,023 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:27,023 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:43:27,024 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
- 2017-08-12 11:43:27,024 [P7516/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 0ms)
- 2017-08-12 11:43:27,033 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:43:27,040 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 6ms)
- 2017-08-12 11:43:27,044 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
- 2017-08-12 11:43:27,045 [P7516/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 1ms)
- 2017-08-12 11:43:56,227 [P7516/D2/T12] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:44:08,691 [P7516/D2/T20] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:44:09,787 [P7516/D2/T14] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2017-08-12 11:44:17,589 [P7516/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-11 11:44:17
- 2017-08-12 11:44:27,990 [P7516/D2/T15] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2017-08-12 11:44:28,285 [P7516/D2/T14] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:44:28,897 [P7516/D2/T9] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2017-08-12 11:46:01,707 [P7516/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 11:46:01,707 [P7516/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 11:46:01,707 [P7516/D2/T34] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
- 2017-08-12 11:46:01,717 [P7516/D2/T34] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 9ms)
- 2017-08-12 11:46:11,370 [P7516/D2/T17] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:46:31,195 [P7516/D2/T52] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:47:31,401 [P7516/D2/T45] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:48:33,983 [P7516/D2/T43] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:51:45,718 [P7516/D2/T53] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:53:49,777 [P7516/D2/T51] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:54:08,587 [P7516/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:54:16,483 [P7516/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:54:18,994 [P7516/D2/T53] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:54:22,629 [P7516/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:54:36,610 [P7516/D2/T61] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:55:07,155 [P7516/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field multiPicker
- 2017-08-12 11:55:07,156 [P7516/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field onlyImages
- 2017-08-12 11:55:07,158 [P7516/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field disableFolderSelect
- 2017-08-12 11:55:07,158 [P7516/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field startNodeId
- 2017-08-12 11:55:07,810 [P7516/D2/T64] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field min
- 2017-08-12 11:55:07,811 [P7516/D2/T64] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field step
- 2017-08-12 11:55:07,811 [P7516/D2/T64] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field max
- 2017-08-12 11:55:16,401 [P7516/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:58:00,167 [P7516/D2/T50] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:58:42,338 [P7516/D2/T58] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:59:35,018 [P7516/D2/T63] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:59:41,179 [P7516/D2/T62] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 11:59:44,055 [P7516/D2/T60] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:00:17,398 [P7516/D2/T21] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:00:30,070 [P7516/D2/T51] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:00:37,224 [P7516/D2/T37] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:00:56,892 [P7516/D2/T51] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:02:29,170 [P7516/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:05:39,171 [P7516/D2/T45] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:06:28,205 [P7516/D2/T9] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:06:52,232 [P7516/D2/T72] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:08:02,118 [P7516/D2/T89] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:08:12,375 [P7516/D2/T88] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:09:17,293 [P7516/D2/T107] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:12:21,309 [P7516/D2/T145] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:14:06,252 [P7516/D2/T99] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'ystetskyy333@gmail.com_12.08.2017 9:14:05' with Id '0' has been published.
- 2017-08-12 12:14:06,524 [P7516/D2/T99] WARN  Umbraco.Core.Services.LocalizedTextService - The culture specified uk-UA was not found in any configured sources for this service
- 2017-08-12 12:14:06,615 [P7516/D2/T99] WARN  Umbraco.Core.Services.LocalizedTextService - The culture specified uk-UA was not found in any configured sources for this service
- 2017-08-12 12:14:06,766 [P7516/D2/T99] WARN  Umbraco.Core.Services.LocalizedTextService - The culture specified uk-UA was not found in any configured sources for this service
- 2017-08-12 12:14:10,835 [P7516/D2/T101] INFO  umbraco.content - Save Xml to file...
- 2017-08-12 12:14:10,838 [P7516/D2/T101] INFO  umbraco.content - Saved Xml to file.
- 2017-08-12 12:14:12,361 [P7516/D2/T104] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:16:57,635 [P7516/D2/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:18:03,610 [P7516/D2/T78] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:26:57,155 [P7516/D2/T33] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:29:46,151 [P7516/D2/T100] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:29:57,709 [P7516/D2/T127] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 12:32:16,422 [P7516/D2/T92] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:01:57,738 [P7516/D2/T165] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:02:05,389 [P7516/D2/T162] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:02:09,143 [P7516/D2/T165] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:02:14,843 [P7516/D2/T172] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:02:56,875 [P7516/D2/T156] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:03:05,365 [P7516/D2/T179] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:04:30,453 [P7516/D2/T120] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
- 2017-08-12 13:04:30,454 [P7516/D2/T120] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
- 2017-08-12 13:04:30,454 [P7516/D2/T120] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.HealthCheck.HealthCheck
- 2017-08-12 13:04:30,459 [P7516/D2/T120] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.HealthCheck.HealthCheck (took 5ms)
- 2017-08-12 13:08:45,909 [P7516/D2/T29] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:11:13,297 [P7516/D2/T159] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 13:48:08,487 [P7516/D2/T121] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 14:01:58,476 [P7516/D2/T133] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Berghoff Fork' with Id '1197' has been published.
- 2017-08-12 14:02:03,694 [P7516/D2/T117] INFO  umbraco.content - Save Xml to file...
- 2017-08-12 14:02:03,699 [P7516/D2/T117] INFO  umbraco.content - Saved Xml to file.
- 2017-08-12 14:02:38,773 [P7516/D2/T12] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Crockery' with Id '1146' has been published.
- 2017-08-12 14:02:44,004 [P7516/D2/T166] INFO  umbraco.content - Save Xml to file...
- 2017-08-12 14:02:44,009 [P7516/D2/T166] INFO  umbraco.content - Saved Xml to file.
- 2017-08-12 14:03:11,414 [P7516/D2/T112] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
-System.ArgumentNullException: Value cannot be null.
-Parameter name: source
-   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
-   at ASP._Page_Views_Partials_ProductBlock_cshtml.Execute() in c:\Users\Юра\Desktop\InternetShop\InternetShop\InternetShop\Views\Partials\ProductBlock.cshtml:line 5
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
-   at ASP._Page_Views_Partials_ProductList_cshtml.Execute() in c:\Users\Юра\Desktop\InternetShop\InternetShop\InternetShop\Views\Partials\ProductList.cshtml:line 7
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
-   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
-   at ASP._Page_Views_ProductCategory_cshtml.Execute() in c:\Users\Юра\Desktop\InternetShop\InternetShop\InternetShop\Views\ProductCategory.cshtml:line 15
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
-   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
-   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
-   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
-   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
-   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
-   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
-   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
-   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
- 2017-08-12 14:04:21,474 [P7516/D2/T164] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Berghoff Fork' with Id '1197' has been published.
- 2017-08-12 14:04:25,981 [P7516/D2/T135] INFO  umbraco.content - Save Xml to file...
- 2017-08-12 14:04:25,986 [P7516/D2/T135] INFO  umbraco.content - Saved Xml to file.
- 2017-08-12 14:05:13,984 [P7516/D2/T164] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Berghoff Fork' with Id '1197' has been published.
- 2017-08-12 14:05:18,750 [P7516/D2/T76] INFO  umbraco.content - Save Xml to file...
- 2017-08-12 14:05:18,753 [P7516/D2/T76] INFO  umbraco.content - Saved Xml to file.
- 2017-08-12 14:20:02,339 [P7516/D2/T164] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ystetskyy333@gmail.com from IP address ::1
- 2017-08-12 14:20:02,339 [P7516/D2/T164] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ystetskyy333@gmail.com logged in from IP address ::1
- 2017-08-12 14:21:16,957 [P7516/D2/T164] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 14:21:35,635 [P7516/D2/T38] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 14:22:06,991 [P7516/D2/T101] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 14:23:37,797 [P7516/D2/T76] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
- 2017-08-12 14:24:07,889 [P7516/D2/T76] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+﻿ 2017-08-13 12:55:32,974 [P2664/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 12:55:32,991 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 12:55:33,021 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 29ms)
+ 2017-08-13 12:55:33,063 [P2664/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 12:55:33,065 [P2664/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 12:55:33,067 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:55:39,799 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 6731ms)
+ 2017-08-13 12:55:39,799 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 12:55:39,801 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2017-08-13 12:55:40,124 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:55:40,125 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:55:40,125 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 12:55:40,126 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2017-08-13 12:55:40,127 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:55:40,127 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:55:40,127 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 12:55:40,129 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
+ 2017-08-13 12:55:40,141 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:55:40,142 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:55:40,142 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 12:55:40,143 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2017-08-13 12:55:40,143 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:55:40,144 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:55:40,144 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 12:55:40,145 [P2664/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2017-08-13 12:55:45,562 [P2664/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 12:55:46,524 [P2664/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 12:55:47,271 [P2664/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 12:55:47,523 [P2664/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 12:55:47,580 [P2664/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 14864ms)
+ 2017-08-13 12:55:57,301 [P2664/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 12:55:58,354 [P2664/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 12:55:58,356 [P2664/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 12:56:00,175 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:00,176 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:00,176 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 12:56:00,177 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 0ms)
+ 2017-08-13 12:56:06,790 [P2664/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:06,790 [P2664/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:06,790 [P2664/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2017-08-13 12:56:06,799 [P2664/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 9ms)
+ 2017-08-13 12:56:08,866 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:08,866 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:08,867 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 12:56:08,867 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2017-08-13 12:56:12,210 [P2664/D2/T11] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 12:56:14,890 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:14,891 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:14,891 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 12:56:14,892 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2017-08-13 12:56:15,647 [P2664/D2/T8] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ystetskyy333@gmail.com from IP address ::1
+ 2017-08-13 12:56:15,650 [P2664/D2/T8] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ystetskyy333@gmail.com logged in from IP address ::1
+ 2017-08-13 12:56:16,364 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:16,364 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:16,365 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 12:56:16,369 [P2664/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 4ms)
+ 2017-08-13 12:56:16,504 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:16,505 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:16,505 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2017-08-13 12:56:16,510 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 4ms)
+ 2017-08-13 12:56:16,903 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:16,904 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:16,904 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 12:56:16,905 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2017-08-13 12:56:16,908 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:16,909 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:16,910 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2017-08-13 12:56:16,915 [P2664/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 5ms)
+ 2017-08-13 12:56:17,882 [P2664/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:56:17,883 [P2664/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:56:17,884 [P2664/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2017-08-13 12:56:17,889 [P2664/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 4ms)
+ 2017-08-13 12:56:36,353 [P2664/D2/T6] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field min
+ 2017-08-13 12:56:36,354 [P2664/D2/T6] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field step
+ 2017-08-13 12:56:36,359 [P2664/D2/T6] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field max
+ 2017-08-13 12:57:01,304 [P2664/D2/T8] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 12:56:58
+ 2017-08-13 12:57:56,721 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:57:56,722 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:57:56,722 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Editors.IEditorValidator
+ 2017-08-13 12:57:56,725 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Editors.IEditorValidator (took 3ms)
+ 2017-08-13 12:57:57,024 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 12:57:57,025 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 12:57:57,025 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-08-13 12:57:57,028 [P2664/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 2ms)
+ 2017-08-13 13:08:41,819 [P2664/D2/T119] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 13:09:06,009 [P2664/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Purchase' with Id '0' has been published.
+ 2017-08-13 13:09:11,856 [P2664/D2/T104] INFO  umbraco.content - Save Xml to file...
+ 2017-08-13 13:09:11,859 [P2664/D2/T104] INFO  umbraco.content - Saved Xml to file.
+ 2017-08-13 13:16:20,240 [P2664/D2/T74] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:17:19,291 [P2664/D2/T27] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:19:24,146 [P2664/D2/T64] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:20:08,832 [P2664/D2/T59] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:20:32,943 [P2664/D2/T19] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:22:33,756 [P2664/D2/T104] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:22:47,703 [P2664/D2/T93] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:23:31,125 [P2664/D2/T14] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:24:38,110 [P2664/D2/T33] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:26:18,516 [P2664/D2/T53] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:28:06,092 [P2664/D2/T39] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:29:36,152 [P2664/D2/T120] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:31:28,846 [P2664/D2/T57] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:32:09,211 [P2664/D2/T9] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:33:05,987 [P2664/D2/T114] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:33:49,088 [P2664/D2/T18] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:33:55,397 [P2664/D2/T56] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:35:18,957 [P2664/D2/T110] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:36:05,720 [P2664/D2/T105] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:36:49,000 [P2664/D2/T105] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:41:54,688 [P2664/D2/T37] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://localhost:65307/umbraco").
+System.Threading.Tasks.TaskCanceledException: Отменена задача.
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-08-13 13:43:27,940 [P2664/D2/T45] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:47:11,320 [P2664/D2/T55] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:47:39,508 [P2664/D2/T20] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:48:51,343 [P2664/D2/T12] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:49:31,963 [P2664/D2/T52] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:51:40,365 [P2664/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:54:21,648 [P2664/D2/T68] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:55:09,498 [P2664/D2/T99] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:55:44,430 [P2664/D2/T68] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:56:11,829 [P2664/D2/T81] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:56:24,766 [P2664/D2/T81] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:57:23,771 [P2664/D2/T40] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:58:37,944 [P2664/D2/T106] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:59:22,930 [P2664/D2/T41] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 13:59:54,791 [P2664/D2/T51] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:00:25,925 [P2664/D2/T69] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:01:27,660 [P2664/D2/T40] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:02:31,119 [P2664/D2/T69] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:02:35,495 [P2664/D2/T72] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:03:00,967 [P2664/D2/T30] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:03:33,807 [P2664/D2/T110] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:08,789 [P2664/D2/T14] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:16,968 [P2664/D2/T96] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:26,394 [P2664/D2/T82] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:32,064 [P2664/D2/T109] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:36,930 [P2664/D2/T88] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:04:48,860 [P2664/D2/T14] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:05:05,852 [P2664/D2/T101] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 14:09:39,386 [P2664/D2/T43] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:05:50,951 [P14992/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 15:05:50,970 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 15:05:50,978 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-08-13 15:05:51,149 [P14992/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 15:05:51,151 [P14992/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 15:05:51,153 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:05:52,500 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1346ms)
+ 2017-08-13 15:05:52,500 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 15:05:52,504 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 3ms)
+ 2017-08-13 15:05:52,529 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:05:52,530 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2017-08-13 15:05:52,531 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 15:05:52,534 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-08-13 15:05:52,536 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:05:52,536 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:05:52,537 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 15:05:52,541 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 4ms)
+ 2017-08-13 15:05:52,558 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:05:52,558 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:05:52,559 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 15:05:52,561 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2017-08-13 15:05:52,562 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:05:52,563 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:05:52,563 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 15:05:52,565 [P14992/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2017-08-13 15:05:55,464 [P14992/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 15:05:56,167 [P14992/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 15:05:56,308 [P14992/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 15:05:56,585 [P14992/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 15:05:56,641 [P14992/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 5840ms)
+ 2017-08-13 15:05:57,470 [P14992/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 15:05:58,015 [P14992/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 15:05:58,017 [P14992/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 15:06:01,146 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:01,146 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:01,147 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 15:06:01,151 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-08-13 15:06:05,523 [P14992/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:05,524 [P14992/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:05,524 [P14992/D2/T8] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2017-08-13 15:06:05,527 [P14992/D2/T8] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 2ms)
+ 2017-08-13 15:06:07,919 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:07,920 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:07,920 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 15:06:07,923 [P14992/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-08-13 15:06:11,251 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:11,251 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:11,252 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 15:06:11,257 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 4ms)
+ 2017-08-13 15:06:12,026 [P14992/D2/T12] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ystetskyy333@gmail.com from IP address ::1
+ 2017-08-13 15:06:12,031 [P14992/D2/T12] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ystetskyy333@gmail.com logged in from IP address ::1
+ 2017-08-13 15:06:12,920 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:12,920 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:12,921 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 15:06:12,925 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 3ms)
+ 2017-08-13 15:06:13,136 [P14992/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:13,137 [P14992/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:13,138 [P14992/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2017-08-13 15:06:13,143 [P14992/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 5ms)
+ 2017-08-13 15:06:13,406 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:13,407 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:13,407 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 15:06:13,407 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2017-08-13 15:06:13,410 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:13,410 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:13,411 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2017-08-13 15:06:13,415 [P14992/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 3ms)
+ 2017-08-13 15:06:13,845 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:06:13,845 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:06:13,846 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2017-08-13 15:06:13,850 [P14992/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 4ms)
+ 2017-08-13 15:06:58,412 [P14992/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 15:06:58
+ 2017-08-13 15:12:04,227 [P14992/D2/T35] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:12:37,016 [P14992/D2/T22] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:13:51,436 [P13696/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 15:13:51,463 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 15:13:51,470 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-08-13 15:13:51,522 [P13696/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 15:13:51,524 [P13696/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 15:13:51,525 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:51,875 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 349ms)
+ 2017-08-13 15:13:51,875 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 15:13:51,882 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 6ms)
+ 2017-08-13 15:13:51,896 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:51,896 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:13:51,897 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 15:13:51,899 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 2ms)
+ 2017-08-13 15:13:51,900 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:51,900 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:13:51,901 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 15:13:51,903 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2017-08-13 15:13:51,915 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:51,916 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:13:51,916 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 15:13:51,918 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2017-08-13 15:13:51,919 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:51,920 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:13:51,920 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 15:13:51,922 [P13696/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2017-08-13 15:13:53,051 [P13696/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 15:13:53,347 [P13696/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 15:13:53,458 [P13696/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 15:13:53,632 [P13696/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 15:13:53,649 [P13696/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2274ms)
+ 2017-08-13 15:13:53,818 [P13696/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 15:13:54,570 [P13696/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 15:13:54,575 [P13696/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 15:13:55,214 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:13:55,214 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:13:55,215 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 15:13:55,218 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 2ms)
+ 2017-08-13 15:14:02,022 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:02,022 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:02,023 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 15:14:02,033 [P13696/D2/T6] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 10ms)
+ 2017-08-13 15:14:06,595 [P13696/D2/T9] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:14:35,404 [P13696/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:35,406 [P13696/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2017-08-13 15:14:35,406 [P13696/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2017-08-13 15:14:35,420 [P13696/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 14ms)
+ 2017-08-13 15:14:36,166 [P13696/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,166 [P13696/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,166 [P13696/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 15:14:36,170 [P13696/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 3ms)
+ 2017-08-13 15:14:36,206 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,206 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,206 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2017-08-13 15:14:36,209 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 2ms)
+ 2017-08-13 15:14:36,225 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,226 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,226 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 15:14:36,227 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2017-08-13 15:14:36,231 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,231 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,232 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2017-08-13 15:14:36,235 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 3ms)
+ 2017-08-13 15:14:36,253 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,253 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,254 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2017-08-13 15:14:36,257 [P13696/D2/T5] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 3ms)
+ 2017-08-13 15:14:36,514 [P13696/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:14:36,514 [P13696/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:14:36,515 [P13696/D2/T9] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 15:14:36,522 [P13696/D2/T9] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 7ms)
+ 2017-08-13 15:14:54,647 [P13696/D2/T10] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 15:14:54
+ 2017-08-13 15:17:36,095 [P13696/D2/T46] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:48:38,127 [P14248/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 15:48:38,149 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 15:48:38,159 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 9ms)
+ 2017-08-13 15:48:38,240 [P14248/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 15:48:38,242 [P14248/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 15:48:38,244 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:38,608 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 363ms)
+ 2017-08-13 15:48:38,608 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 15:48:38,616 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 8ms)
+ 2017-08-13 15:48:38,634 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:38,635 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:38,635 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 15:48:38,638 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 2ms)
+ 2017-08-13 15:48:38,639 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:38,639 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:38,639 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 15:48:38,642 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2017-08-13 15:48:38,656 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:38,657 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:38,657 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 15:48:38,660 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2017-08-13 15:48:38,660 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:38,661 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:38,661 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 15:48:38,665 [P14248/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2017-08-13 15:48:39,942 [P14248/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 15:48:40,261 [P14248/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 15:48:40,385 [P14248/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 15:48:40,515 [P14248/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 15:48:40,530 [P14248/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2474ms)
+ 2017-08-13 15:48:40,707 [P14248/D2/T13] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 15:48:41,111 [P14248/D2/T13] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 15:48:41,114 [P14248/D2/T13] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 15:48:41,795 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:41,795 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:41,796 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 15:48:41,801 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-08-13 15:48:47,706 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:48:47,707 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:48:47,707 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 15:48:47,711 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-08-13 15:48:51,600 [P14248/D2/T12] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:49:00,575 [P14248/D2/T14] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:49:17,902 [P14248/D2/T12] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:49:26,733 [P14248/D2/T7] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:49:27,426 [P14248/D2/T12] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:49:41,223 [P14248/D2/T7] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 15:49:41
+ 2017-08-13 15:49:41,322 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:49:41,323 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:49:41,323 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 15:49:41,328 [P14248/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 4ms)
+ 2017-08-13 15:49:52,193 [P14248/D2/T15] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 15:50:24,744 [P14248/D2/T7] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:54:15,034 [P12636/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 15:54:15,067 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 15:54:15,077 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 10ms)
+ 2017-08-13 15:54:15,139 [P12636/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 15:54:15,140 [P12636/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 15:54:15,142 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:15,481 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 339ms)
+ 2017-08-13 15:54:15,482 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 15:54:15,484 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 2ms)
+ 2017-08-13 15:54:15,498 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:15,499 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:15,499 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 15:54:15,501 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 1ms)
+ 2017-08-13 15:54:15,502 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:15,502 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:15,503 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 15:54:15,506 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 3ms)
+ 2017-08-13 15:54:15,524 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:15,524 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:15,525 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 15:54:15,527 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2017-08-13 15:54:15,528 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:15,528 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:15,529 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 15:54:15,531 [P12636/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2017-08-13 15:54:16,656 [P12636/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 15:54:17,044 [P12636/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 15:54:17,169 [P12636/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 15:54:17,304 [P12636/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 15:54:17,326 [P12636/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2377ms)
+ 2017-08-13 15:54:17,491 [P12636/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 15:54:17,880 [P12636/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 15:54:17,883 [P12636/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 15:54:18,536 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:18,536 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:18,537 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 15:54:18,540 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-08-13 15:54:24,295 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:54:24,296 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:54:24,297 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 15:54:24,304 [P12636/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 7ms)
+ 2017-08-13 15:54:28,615 [P12636/D2/T10] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:54:34,279 [P12636/D2/T11] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:55:17,983 [P12636/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 15:55:17
+ 2017-08-13 15:55:18,073 [P12636/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 15:55:18,073 [P12636/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 15:55:18,073 [P12636/D2/T15] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 15:55:18,078 [P12636/D2/T15] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 4ms)
+ 2017-08-13 15:56:05,667 [P12636/D2/T10] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:56:13,005 [P12636/D2/T13] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 15:56:21,252 [P12636/D2/T9] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:01:38,926 [P1160/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 16:01:38,946 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 16:01:38,953 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-08-13 16:01:39,002 [P1160/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 16:01:39,004 [P1160/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 16:01:39,006 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:39,318 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 312ms)
+ 2017-08-13 16:01:39,318 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 16:01:39,325 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 7ms)
+ 2017-08-13 16:01:39,346 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:39,347 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:39,348 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 16:01:39,350 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 2ms)
+ 2017-08-13 16:01:39,351 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:39,351 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:39,351 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 16:01:39,354 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 2ms)
+ 2017-08-13 16:01:39,366 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:39,366 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:39,366 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 16:01:39,368 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 1ms)
+ 2017-08-13 16:01:39,369 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:39,369 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:39,369 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 16:01:39,371 [P1160/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 1ms)
+ 2017-08-13 16:01:40,462 [P1160/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 16:01:40,750 [P1160/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 16:01:40,864 [P1160/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 16:01:40,979 [P1160/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 16:01:40,993 [P1160/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2128ms)
+ 2017-08-13 16:01:41,148 [P1160/D2/T14] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 16:01:41,485 [P1160/D2/T14] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 16:01:41,487 [P1160/D2/T14] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 16:01:42,045 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:42,046 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:42,046 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 16:01:42,050 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-08-13 16:01:47,472 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:01:47,472 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:01:47,472 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 16:01:47,477 [P1160/D2/T14] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 4ms)
+ 2017-08-13 16:01:51,572 [P1160/D2/T10] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:01:59,733 [P1160/D2/T15] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:02:05,836 [P1160/D2/T14] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:02:12,999 [P1160/D2/T12] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:02:13,854 [P1160/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type product matches a locally declared controller of type InternetShop.Umbraco.Surface.ProductController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:02:40,193 [P1160/D2/T13] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:02:41,610 [P1160/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 16:02:41
+ 2017-08-13 16:02:41,708 [P1160/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:02:41,712 [P1160/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 4ms)
+ 2017-08-13 16:02:41,713 [P1160/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 16:02:41,718 [P1160/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 5ms)
+ 2017-08-13 16:03:03,318 [P1160/D2/T11] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:08:33,226 [P12012/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 16:08:33,262 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 16:08:33,274 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 11ms)
+ 2017-08-13 16:08:33,338 [P12012/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 16:08:33,339 [P12012/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 16:08:33,343 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:33,711 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 368ms)
+ 2017-08-13 16:08:33,712 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 16:08:33,717 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2017-08-13 16:08:33,740 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:33,742 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 2ms)
+ 2017-08-13 16:08:33,743 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 16:08:33,746 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 3ms)
+ 2017-08-13 16:08:33,747 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:33,747 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:08:33,748 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 16:08:33,756 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 8ms)
+ 2017-08-13 16:08:33,770 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:33,770 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:08:33,770 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 16:08:33,772 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2017-08-13 16:08:33,774 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:33,775 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2017-08-13 16:08:33,776 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 16:08:33,778 [P12012/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2017-08-13 16:08:35,060 [P12012/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 16:08:35,372 [P12012/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 16:08:35,492 [P12012/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 16:08:35,623 [P12012/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 16:08:35,641 [P12012/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2482ms)
+ 2017-08-13 16:08:35,805 [P12012/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 16:08:36,224 [P12012/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 16:08:36,228 [P12012/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 16:08:36,884 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:36,884 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:08:36,884 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 16:08:36,887 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 3ms)
+ 2017-08-13 16:08:42,669 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:08:42,670 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:08:42,670 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 16:08:42,673 [P12012/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 3ms)
+ 2017-08-13 16:08:46,613 [P12012/D2/T17] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:09:04,574 [P12012/D2/T13] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:09:32,230 [P12012/D2/T15] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:09:36,309 [P12012/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 16:09:36
+ 2017-08-13 16:09:36,393 [P12012/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:09:36,393 [P12012/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:09:36,393 [P12012/D2/T7] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 16:09:36,397 [P12012/D2/T7] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 3ms)
+ 2017-08-13 16:09:41,446 [P12012/D2/T17] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:09:58,262 [P12012/D2/T15] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:09:59,692 [P12012/D2/T13] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:10:01,522 [P12012/D2/T14] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:14:29,790 [P12012/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:29,790 [P12012/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:29,790 [P12012/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IAction
+ 2017-08-13 16:14:29,801 [P12012/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IAction (took 10ms)
+ 2017-08-13 16:14:32,635 [P12012/D2/T22] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username ystetskyy333@gmail.com from IP address ::1
+ 2017-08-13 16:14:32,637 [P12012/D2/T22] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: ystetskyy333@gmail.com logged in from IP address ::1
+ 2017-08-13 16:14:32,988 [P12012/D2/T28] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:32,988 [P12012/D2/T28] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:32,989 [P12012/D2/T28] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 16:14:32,991 [P12012/D2/T28] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 2ms)
+ 2017-08-13 16:14:33,081 [P12012/D2/T22] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:33,081 [P12012/D2/T22] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:33,082 [P12012/D2/T22] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication
+ 2017-08-13 16:14:33,086 [P12012/D2/T22] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.ApplicationAttribute]umbraco.interfaces.IApplication (took 3ms)
+ 2017-08-13 16:14:33,087 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:33,088 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:33,088 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ITree
+ 2017-08-13 16:14:33,091 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ITree (took 3ms)
+ 2017-08-13 16:14:33,111 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:33,111 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:33,111 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController
+ 2017-08-13 16:14:33,112 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Web.Trees.TreeAttribute]Umbraco.Web.Trees.TreeController (took 0ms)
+ 2017-08-13 16:14:33,115 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:33,115 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:33,115 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree
+ 2017-08-13 16:14:33,120 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved [umbraco.businesslogic.TreeAttribute]umbraco.interfaces.ITree (took 4ms)
+ 2017-08-13 16:14:53,333 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:14:53,334 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:14:53,334 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2017-08-13 16:14:53,336 [P12012/D2/T30] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 2ms)
+ 2017-08-13 16:15:40,727 [P12012/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:19:15,132 [P14660/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on YURA
+ 2017-08-13 16:19:15,153 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-13 16:19:15,160 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-08-13 16:19:15,226 [P14660/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-13 16:19:15,227 [P14660/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-13 16:19:15,230 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:15,574 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 344ms)
+ 2017-08-13 16:19:15,574 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-13 16:19:15,576 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 2ms)
+ 2017-08-13 16:19:15,591 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:15,592 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:15,592 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-13 16:19:15,594 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 1ms)
+ 2017-08-13 16:19:15,594 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:15,595 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:15,595 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-13 16:19:15,598 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 3ms)
+ 2017-08-13 16:19:15,615 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:15,616 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:15,616 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-13 16:19:15,619 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 3ms)
+ 2017-08-13 16:19:15,620 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:15,621 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:15,621 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-13 16:19:15,624 [P14660/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 2ms)
+ 2017-08-13 16:19:16,886 [P14660/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-13 16:19:17,199 [P14660/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-13 16:19:17,311 [P14660/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-13 16:19:17,455 [P14660/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-13 16:19:17,471 [P14660/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2401ms)
+ 2017-08-13 16:19:17,663 [P14660/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:65307/umbraco (UmbracoModule request)
+ 2017-08-13 16:19:18,096 [P14660/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2017-08-13 16:19:18,100 [P14660/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-13 16:19:18,742 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:18,743 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:18,743 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-13 16:19:18,748 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2017-08-13 16:19:24,305 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:19:24,305 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:19:24,306 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-08-13 16:19:24,311 [P14660/D2/T10] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 5ms)
+ 2017-08-13 16:19:28,635 [P14660/D2/T11] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:19:41,089 [P14660/D2/T14] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:20:01,494 [P14660/D2/T10] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2017-08-13 16:20:07,624 [P14660/D2/T11] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2017-08-13 16:20:18,191 [P14660/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-12 16:20:18
+ 2017-08-13 16:20:18,248 [P14660/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-13 16:20:18,248 [P14660/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-13 16:20:18,249 [P14660/D2/T13] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-13 16:20:18,260 [P14660/D2/T13] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 10ms)
+ 2017-08-13 16:20:27,131 [P14660/D2/T15] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type basket matches a locally declared controller of type InternetShop.Umbraco.Api.BasketController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.

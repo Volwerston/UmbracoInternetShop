@@ -46,6 +46,7 @@ function postChangesToServer(){
         dataType: "json",
         data: JSON.stringify(toPost)
     });
+
 }
 
 function bindEvents(){
@@ -80,7 +81,6 @@ function bindEvents(){
 }
 
 $(document).ready(function(){
-
 $.ajax({
     method: 'GET',
     url: '/Umbraco/Surface/Basket/GetBasketEntries',
@@ -98,6 +98,7 @@ $.ajax({
             }
             
             $("#basket_container").append("<h3 style='text-align: center'>Overall price: <span id='overall_price'>" + overallPrice + "</span> $</h3>");
+            $("#purchase_button").removeAttr("disabled");
             
             bindEvents();
         }

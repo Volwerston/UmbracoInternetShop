@@ -1,4 +1,5 @@
 ﻿using InternetShop.Models;
+using InternetShop.Models.Auxiliary;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,54 @@ namespace InternetShop.Umbraco.Api
 {
     public class BasketController : SurfaceController
     {
+        [HttpPost]
+        public ActionResult Purchase(MailContext c)
+        {
+            try
+            {
+                List<BasketEntry> entries = Session["basket"] as List<BasketEntry>;
+
+                if(entries == null)
+                {
+                    throw new Exception("Session has expired");
+                }
+                else if(entries.Count() == 0)
+                {
+                    throw new Exception("No items in the basket were found");
+                }
+
+                c.Entries = entries;
+
+                List<IBuilder<string, MailContext>> builders = new List<IBuilder<string, MailContext>>()
+                {
+                     new MailHeaderBuilder()
+                     {
+                          Context = c
+                     },
+                     new MailBodyBuilder()
+                     {
+                         Context = c
+                     },
+                     new MailFooterBuilder()
+                     {
+                         Context = c
+                     }
+                };
+
+                IDirector<string, MailContext> director = new MailDirector(builders);
+
+                director.Act();
+
+                Session["basket"] = null;
+
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            catch(Exception e)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
         [HttpGet]
         public string GetBasketEntries()
         {
