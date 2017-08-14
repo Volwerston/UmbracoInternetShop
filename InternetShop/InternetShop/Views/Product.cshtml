@@ -2,11 +2,14 @@
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
     Layout = "Layout39Cols.cshtml";
+    UmbracoHelper umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+    IPublishedContent content = umbracoHelper.TypedContentSingleAtXPath("//startPage");
+    var type = content.GetPropertyValue<string>("productPageCarouselsType");
 }
 
 <div class="row">
     <div class="col-sm-6">
-        @Html.Partial("HorizontalDottedCarousel", Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"))
+        @Html.Partial(type, Model.Content.GetPropertyValue<IEnumerable<IPublishedContent>>("carousel"))
         <br />
 
         <div class="row">
@@ -124,8 +127,26 @@
     </div>
 </div>
 
+<div id="loadingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+            <div class="row">
+                <div class="col-xs-push-5 col-xs-2">
+                    <img src="/Common/Images/ajax-loader.gif" />
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 @section otherScripts{
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+    <script type="text/javascript">
+        var pageId = @((int)CurrentPage.Id);
+    </script>
     <script type="text/javascript" src="/scripts/product.js"></script>
 }

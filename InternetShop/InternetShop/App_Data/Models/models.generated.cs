@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fff1630fdf4a7f14")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fa118a631cc2bf8d")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -161,6 +161,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<StartPage, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Main page carousels type
+		///</summary>
+		[ImplementPropertyType("mainPageCarouselsType")]
+		public string MainPageCarouselsType
+		{
+			get { return this.GetPropertyValue<string>("mainPageCarouselsType"); }
+		}
+
+		///<summary>
+		/// Product page carousels type
+		///</summary>
+		[ImplementPropertyType("productPageCarouselsType")]
+		public string ProductPageCarouselsType
+		{
+			get { return this.GetPropertyValue<string>("productPageCarouselsType"); }
 		}
 	}
 

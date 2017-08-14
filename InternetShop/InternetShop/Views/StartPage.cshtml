@@ -2,6 +2,9 @@
     @using ContentModels = Umbraco.Web.PublishedContentModels;
     @{
     Layout = "Layout12Cols.cshtml";
+    UmbracoHelper umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+    IPublishedContent content = umbracoHelper.TypedContentSingleAtXPath("//startPage");
+    var type = content.GetPropertyValue<string>("mainPageCarouselsType");
     }
 
     @{
@@ -9,7 +12,7 @@
     foreach(var item in elements)
     {
     var el = item.GetPropertyValue<IEnumerable<IPublishedContent>>("myCarousel");
-   Html.RenderPartial("HorizontalDottedCarousel", el);
+    Html.RenderPartial(type, el);
 }
 
 }

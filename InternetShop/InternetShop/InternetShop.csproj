@@ -415,6 +415,7 @@
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.doctypepicker.html" />
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.editor.html" />
     <Content Include="App_Plugins\NestedContent\Views\nestedcontent.html" />
+    <Content Include="Common\Images\ajax-loader.gif" />
     <Content Include="css\global.css" />
     <Content Include="css\intermediateCategory.css" />
     <Content Include="css\jquery.growl.css" />

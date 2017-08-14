@@ -14,6 +14,9 @@ function buildContext(){
    $(document).ready(function(){
         $("#purchaseForm").validator().submit(function(e){
             if(!e.isDefaultPrevented()){
+                
+                $("#loadingModal").modal("show");
+                
                 var toPass = buildContext();
                 
                 $.ajax({
@@ -22,10 +25,12 @@ function buildContext(){
                     contentType: 'application/json; charset=utf-8',
                     data: JSON.stringify(toPass),
                     success: function(res){
-                        displayMessage("Success", "Your order has been successfully processed");
+                        $("#loadingModal").modal("hide");
+                        displayMessage("Success", "Your order has been successfully processed. Please check your email");
                         setTimeout(function(){window.location = '/'}, 2000);
                     },
                     error: function(res){
+                        $("#loadingModal").modal("hide");
                         displayMessage("Error", res.statusText);
                     }
                 });

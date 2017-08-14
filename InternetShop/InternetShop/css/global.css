@@ -1,3 +1,7 @@
+body{
+	padding-top: 50px;	
+}
+
 .categoryBlock{
 	background-color: lightblue; 
 	cursor: pointer;
@@ -17,4 +21,8 @@
 	background-color: lightblue;
 	padding: 10px;	
 	border: 1px solid white;
+}
+
+.root-menu-holder{
+padding-bottom: 15px;	
 }

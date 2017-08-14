@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IEnumerable<IPublishedContent>>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<style>
+.fotorama__html div,
+.fotorama__html a {
+  display: block;
+  height: 100%;
+  background: url(_.gif);
+}
+</style>
+
+<div class="fotorama" style="width: 100%" data-allowfullscreen="true" data-nav="thumbs">
+    @foreach(var item in Model){
+    var image = item.GetPropertyValue<IPublishedContent>("image");
+    var node = Umbraco.TypedContent(item.GetPropertyValue<int>("link"));
+    var nodeUrl = (node == null) ? "" : node.Url;
+    var title = item.GetPropertyValue("title") ?? "";
+    
+    <div data-img="@image.Url" 
+    data-caption="@title">
+        <a href="@nodeUrl" ></a>
+    </div>
+    }
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
