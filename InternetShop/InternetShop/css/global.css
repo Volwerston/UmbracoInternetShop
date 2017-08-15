@@ -5,6 +5,7 @@ body{
 .categoryBlock{
 	background-color: lightblue; 
 	cursor: pointer;
+	border: 1px solid white;
 }
 
 .commentBlock{
