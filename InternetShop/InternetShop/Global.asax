@@ -1,1 +1,1 @@
-﻿<%@ Application Inherits="Umbraco.Web.UmbracoApplication" Language="C#" %>
+﻿<%@ Application Inherits="InternetShop.Models.Auxiliary.CustomGlobal" Language="C#" %>

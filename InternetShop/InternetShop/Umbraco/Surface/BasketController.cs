@@ -12,6 +12,7 @@ using Umbraco.Core.Models;
 using Umbraco.Core.Services;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
+using System.Threading.Tasks;
 
 namespace InternetShop.Umbraco.Api
 {
@@ -82,7 +83,7 @@ namespace InternetShop.Umbraco.Api
                 IContent content = contentService.GetById(entries[index].Id);
 
                 content.SetValue("inStock", content.GetValue<int>("inStock") + entries[index].Items);
-                Services.ContentService.SaveAndPublishWithStatus(content);
+                System.Threading.Tasks.Task.Run(() => Services.ContentService.SaveAndPublishWithStatus(content));
 
                 entries.RemoveAt(index);
                 Session["basket"] = entries;
@@ -153,7 +154,7 @@ namespace InternetShop.Umbraco.Api
                 if(entry.Items < needed.Items)
                 {
                     content.SetValue("inStock", content.GetValue<int>("inStock") + needed.Items - entry.Items);
-                    Services.ContentService.SaveAndPublishWithStatus(content);
+                    System.Threading.Tasks.Task.Run(() => Services.ContentService.SaveAndPublishWithStatus(content));
                 }
                 else
                 {
@@ -166,7 +167,7 @@ namespace InternetShop.Umbraco.Api
                     else
                     {
                         content.SetValue("inStock", content.GetValue<int>("inStock") - (entry.Items - needed.Items));
-                        Services.ContentService.SaveAndPublishWithStatus(content);
+                        System.Threading.Tasks.Task.Run(() => Services.ContentService.SaveAndPublishWithStatus(content));
                     }
                 }
 
@@ -300,7 +301,7 @@ namespace InternetShop.Umbraco.Api
                 IContent content = contentService.GetById(entry.Id);
                 content.SetValue("inStock", itemsRemained - entry.Items);
 
-                Services.ContentService.SaveAndPublishWithStatus(content);
+                System.Threading.Tasks.Task.Run(() => Services.ContentService.SaveAndPublishWithStatus(content));
 
                 return new HttpStatusCodeResult(HttpStatusCode.OK);
             }

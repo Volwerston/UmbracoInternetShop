@@ -3509,6 +3509,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Auxiliary\CustomGlobal.cs" />
     <Compile Include="Models\Auxiliary\MailBodyBuilder.cs" />
     <Compile Include="Models\Auxiliary\MailFooterBuilder.cs" />
     <Compile Include="Models\Auxiliary\MailHeaderBuilder.cs" />

@@ -33,7 +33,8 @@
                 data: JSON.stringify(toPass),
                 success: function (res) {
                     $("#loadingModal").modal("hide");
-                    window.displayMessage("Success", "Your message was added. It will soon appear on this page");
+                    displayMessage("Success", "Your comment was successfully added");
+                    setTimeout(function(){location.reload();}, 2000);
                 },
                 error: function (res) {
                     $("#loadingModal").modal("hide");

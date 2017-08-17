@@ -41,7 +41,7 @@ namespace InternetShop.Umbraco.Surface
                 newComment.SetValue("senderEmail", c.SenderEmail);
                 newComment.SetValue("senderName", c.SenderName);
 
-                Services.ContentService.SaveAndPublishWithStatus(newComment);
+                System.Threading.Tasks.Task.Run(() => Services.ContentService.SaveAndPublishWithStatus(newComment));
 
                 return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
