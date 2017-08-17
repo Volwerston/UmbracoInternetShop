@@ -62,21 +62,47 @@ function bindEvents(){
             return;
         }
         
-        if(newVal != entry.Item2.Items){
-            var shift = entry.Item2.Price*(newVal - entry.Item2.Items)*(1 - entry.Item2.DiscountPercents/100);
-            overallPrice += shift;
-            $("#overall_price").html(overallPrice);
-            var itemsPrice = newVal*entry.Item2.Price*(1 - entry.Item2.DiscountPercents/100);
-            $("#all_price_" + pos).html(itemsPrice);
-            entry.Item2.Items = newVal;
-            postChangesToServer();
+        if (newVal != entry.Item2.Items) {
+            var newEntry = {
+                Items: newVal,
+                Id: basketEntries[pos].Item2.Id,
+                Properties: basketEntries[pos].Item2.Properties
+        };
+
+        $.ajax({
+             method: 'POST',
+             url: '/Umbraco/Surface/Basket/ChangeItemsNumber',
+             contentType: 'application/json; charset=utf-8',
+             data: JSON.stringify(newEntry),
+             success: function (res) {
+                 var shift = entry.Item2.Price * (newVal - entry.Item2.Items) * (1 - entry.Item2.DiscountPercents / 100);
+                 overallPrice += shift;
+                 $("#overall_price").html(overallPrice);
+                 var itemsPrice = newVal * entry.Item2.Price * (1 - entry.Item2.DiscountPercents / 100);
+                 $("#all_price_" + pos).html(itemsPrice);
+                 entry.Item2.Items = newVal;
+             },
+             error: function (res) {
+                 $("#items_" + pos).val(entry.Item2.Items);
+                 window.displayMessage("Error", res.statusText);
+             }
+        });
         }
     });
     
-    $("#remove_product_confirm").click(function(){
-        basketEntries.splice(itemToRemoveIndex,1);
-        postChangesToServer();
-        location.reload();
+    $("#remove_product_confirm").click(function () {
+
+        $.ajax({
+            method: 'DELETE',
+            url: '/Umbraco/Surface/Basket/DeleteBasketEntry?index=' + itemToRemoveIndex,
+            contentType: 'application/json; charset=utf-8',
+            success: function (res) {
+                location.reload();
+            },
+            error: function (res) {
+                window.displayMessage("Error", res.statusText);
+            }
+        });
     });
 }
 

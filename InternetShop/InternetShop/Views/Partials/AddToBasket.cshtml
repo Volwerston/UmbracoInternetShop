@@ -111,7 +111,7 @@
                     displayMessage("Success", "Product successfully added to basket");
                 },
                 error: function (res) {
-                    displayMessage("Error", "Internal server error");
+                    displayMessage("Error", res.statusText);
                 }
             });
             

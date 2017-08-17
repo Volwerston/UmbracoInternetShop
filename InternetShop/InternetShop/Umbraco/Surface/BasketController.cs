@@ -9,6 +9,7 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using Umbraco.Core.Models;
+using Umbraco.Core.Services;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
 
@@ -55,6 +56,122 @@ namespace InternetShop.Umbraco.Api
                 director.Act();
 
                 Session["basket"] = null;
+
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            catch(Exception e)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpDelete]
+        public ActionResult DeleteBasketEntry()
+        {
+            try
+            {
+                int index = Convert.ToInt32(Request.QueryString["index"]);
+                List<BasketEntry> entries = Session["basket"] as List<BasketEntry>;
+
+                if(entries == null)
+                {
+                    throw new Exception("Session has expired");
+                }
+
+                var contentService = Services.ContentService;
+                IContent content = contentService.GetById(entries[index].Id);
+
+                content.SetValue("inStock", content.GetValue<int>("inStock") + entries[index].Items);
+                Services.ContentService.SaveAndPublishWithStatus(content);
+
+                entries.RemoveAt(index);
+                Session["basket"] = entries;
+
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            catch(Exception e)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult ChangeItemsNumber(BasketEntry entry)
+        {
+            try
+            {
+                entry.Properties = entry.Properties.OrderBy(x => x.Name).ToList();
+                List<BasketEntry> entries = Session["basket"] as List<BasketEntry>;
+                if(entries == null)
+                {
+                    throw new Exception("Session has expired");
+                }
+
+                var ent = entries.Where(x => x.Id == entry.Id).ToList();
+
+                BasketEntry needed = null;
+                int neededPos = -1;
+
+                for(int j = 0; j < ent.Count; ++j)
+                {
+                    bool ok = true;
+                    var properties = ent[j].Properties.OrderBy(x => x.Name).ToList();
+
+                    if(properties.Count() != entry.Properties.Count())
+                    {
+                        ok = false;
+                    }
+
+                    if (ok)
+                    {
+                        for(int i = 0; i < properties.Count(); ++i)
+                        {
+                            if(properties[i].Name != entry.Properties[i].Name || properties[i].Values[0] != entry.Properties[i].Values[0])
+                            {
+                                ok = false;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (ok)
+                    {
+                        needed = ent[j];
+                        neededPos = j;
+                        break;
+                    }
+                }
+
+                if(needed == null)
+                {
+                    throw new Exception("Session has expired");
+                }
+
+                var contentService = Services.ContentService;
+                IContent content = contentService.GetById(entry.Id);
+
+                if(entry.Items < needed.Items)
+                {
+                    content.SetValue("inStock", content.GetValue<int>("inStock") + needed.Items - entry.Items);
+                    Services.ContentService.SaveAndPublishWithStatus(content);
+                }
+                else
+                {
+                    int remain = content.GetValue<int>("inStock");
+
+                    if (remain < entry.Items - needed.Items)
+                    {
+                        throw new Exception("Not enought items in stock");
+                    }
+                    else
+                    {
+                        content.SetValue("inStock", content.GetValue<int>("inStock") - (entry.Items - needed.Items));
+                        Services.ContentService.SaveAndPublishWithStatus(content);
+                    }
+                }
+
+                entries[neededPos].Items = entry.Items;
+                Session["basket"] = entries;
 
                 return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
@@ -117,6 +234,14 @@ namespace InternetShop.Umbraco.Api
             {
                 entry.Price = new UmbracoHelper(UmbracoContext.Current).TypedContent(entry.Id).GetPropertyValue<double>("price");
                 entry.DiscountPercents = new UmbracoHelper(UmbracoContext.Current).TypedContent(entry.Id).GetPropertyValue<int>("discount");
+                var product = new UmbracoHelper(UmbracoContext.Current).TypedContent(entry.Id);
+                
+                int itemsRemained = product.GetPropertyValue<int>("inStock");
+
+                if(entry.Items > itemsRemained)
+                {
+                    throw new Exception("Not enough items in stock");
+                }
 
                 List<BasketEntry> entries = Session["basket"] as List<BasketEntry>;
                 if (entries == null)
@@ -171,11 +296,17 @@ namespace InternetShop.Umbraco.Api
                     Session["basket"] = entries;
                 }
 
+                var contentService = Services.ContentService;
+                IContent content = contentService.GetById(entry.Id);
+                content.SetValue("inStock", itemsRemained - entry.Items);
+
+                Services.ContentService.SaveAndPublishWithStatus(content);
+
                 return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
-            catch
+            catch(Exception e)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+                return new HttpStatusCodeResult(HttpStatusCode.InternalServerError, e.Message);
             }
         }
     }
